@@ -8,6 +8,10 @@ const theme = createMuiTheme({
       main: "#0158AE",
       light: "#408AD3",
     },
+    secondary: {
+      main: "#288FB0",
+      light: "#408AD3",
+    }
   },
   typography: {
     fontFamily: "Lato",
@@ -25,7 +29,7 @@ const theme = createMuiTheme({
       fontSize: 15,
     },
 
-    // Team member card title
+    // Team member card title, Pre-register button in committee
     subtitle2: {
       fontFamily: "Lato",
       fontWeight: 800,
@@ -36,6 +40,13 @@ const theme = createMuiTheme({
     body2: {
       fontFamily: "Lato",
       fontSize: 14,
+    },
+
+    // Styles for registered member count
+    h2: {
+      fontFamily: "Orbitron",
+      fontSize: 90,
+      fontWeight: 900,
     },
   },
 });
