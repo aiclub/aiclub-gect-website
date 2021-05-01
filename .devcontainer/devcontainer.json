@@ -1,0 +1,40 @@
+{
+	"name": "AI Club GECT Website",
+	"dockerFile": "Dockerfile",
+
+    // Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"diffEditor.wordWrap": "on",
+		"editor.wordWrap": "on",
+		"editor.suggestSelection": "first",
+		"editor.wordBasedSuggestions": true,
+		"files.autoSave": "onFocusChange",
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+		"workbench.colorTheme": "City Lights",
+		"workbench.iconTheme": "city-lights-icons-vsc",	  
+		"workbench.startupEditor": "newUntitledFile",
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"esbenp.prettier-vscode",
+		"jock.svg",
+		"mgmcdermott.vscode-language-babel",
+		"michelemelluso.gitignore",
+        "yummygum.city-lights-icon-vsc",
+		"yummygum.city-lights-theme",
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [80, 3000, 3030],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "yarn install",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "root"
+}
