@@ -1,0 +1,49 @@
+.eve {
+  height: 208px;
+  width: 198px;
+  display: inline-block;
+  animation: hop 5s infinite ease-in-out;
+}
+
+@keyframes hop {
+  0% {
+  }
+  50% {
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.eve-square {
+  width: 225px;
+  height: 225px;
+  display: inline-block;
+  animation: rotation-clockwise 20s infinite ease-in-out;
+}
+
+@keyframes rotation-clockwise {
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.eve-triangle {
+  height: 130px;
+  width: 130px;
+  display: inline-block;
+  animation: rotation-anticlockwise 20s infinite ease-in-out;
+}
+
+@keyframes rotation-anticlockwise {
+  50% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
