@@ -1,19 +1,33 @@
 import { makeStyles } from "@material-ui/core/styles";
-import Slider from "./Members/SlidingProfile"
+
+import Slider from "./Members/SlidingProfile";
+import MemberCount from "./MemberCount/MemberCount";
+import Background from "../../assets/images/committee/background.png";
+
 const useStyles = makeStyles({
-  // Remove this class during development
   committeeContainer: {
+    width: "100vw",
     height: "100vh",
-    alignItems: "center",
-    justifyContent: "center",
+    position: "relative",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    background: `url(${Background})`,
   },
-  imagePlaceholder: {
-    minHeight: "40vh"
+  memberCountContainer: {
+    position: "absolute",
+    zIndex: 20,
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
   },
   sliderContainer: {
-    // minHeight: "60vh"
-    marginBottom: "20px"
-  }
+    position: "absolute",
+    bottom: 0,
+    zIndex: 30,
+    width: "100%",
+    marginBottom: 20,
+  },
 });
 
 const Committee = () => {
@@ -21,12 +35,12 @@ const Committee = () => {
 
   return (
     <div className={classes.committeeContainer}>
-      <div className={classes.imagePlaceholder}>
+      <div className={classes.memberCountContainer}>
+        <MemberCount />
       </div>
       <div className={classes.sliderContainer}>
-        <Slider></Slider>
+        <Slider />
       </div>
-
     </div>
   );
 };

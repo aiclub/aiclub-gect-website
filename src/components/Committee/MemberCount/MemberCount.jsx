@@ -11,6 +11,12 @@ import AnimatedCounter from "./AnimatedCounter/AnimatedCounter";
 
 // Overriding @material ui styles
 const useStyles = makeStyles({
+  wrapper: {
+    padding: 10,
+    borderRadius: 50,
+    boxShadow: "0 0 500px 50px #FFF",
+    backgroundColor: "rgba(255, 255, 255, 0.6)",
+  },
   text: {
     fontSize: 30,
     color: "#26214F",
@@ -45,7 +51,12 @@ const MemberCount = () => {
   }, []);
 
   return (
-    <Grid container direction={"column"} alignItems={"center"}>
+    <Grid
+      container
+      direction={"column"}
+      alignItems={"center"}
+      className={classes.wrapper}
+    >
       <Grid item>
         <AnimatedCounter count={count} />
       </Grid>
