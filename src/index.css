@@ -81,6 +81,19 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "Passion-One";
+  src: url("./assets/fonts/PassionOne/PassionOne-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azonix";
+  src: url("./assets/fonts/azonix/Azonix.otf");
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
