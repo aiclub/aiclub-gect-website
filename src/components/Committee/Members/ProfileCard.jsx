@@ -1,7 +1,17 @@
 import { makeStyles } from '@material-ui/core/styles';
+import members from "../../../resources/members";
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles({
 
+    cardContainer: {
+        position: "absolute",
+        width: "358px",
+        height: "229px",
+        left: "30px",
+        top: "-240px",
+        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5))"
+    },
     memberCard: {
         position: "absolute",
         width: "358px",
@@ -15,23 +25,17 @@ const useStyles = makeStyles({
     },
     memberPic: {
         position: "absolute",
-        width: "95px",
-        height: "95px",
+        // width: "95px",
+        // height: "95px",
         left: "18px",
         top: "0px",
         zIndex: 1,
-        background: 'grey',
-        border: "3px solid #288FB0",
-        boxSizing: "border-box",
-        borderRadius: "20px"
+        // background: 'grey',
+        // border: "3px solid #288FB0",
+        // boxSizing: "border-box",
+        // borderRadius: "20px"
     },
-    cardContainer: {
-        width: "358px",
-        height: "229px",
-        left: "249px",
-        top: "487px",
-        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5))"
-    },
+    
     memberName: {
         position: "absolute",
         width: "196px",
@@ -44,7 +48,7 @@ const useStyles = makeStyles({
         fontWeight: '800',
         fontSize: '25px',
         lineHeight: '30px',
-        textAlign: 'center',
+        textAlign: 'left',
         letterSpacing: '0.05em',
         color: '#000000'
     },
@@ -63,7 +67,7 @@ const useStyles = makeStyles({
         textAlign: 'left',
         color: '#CDCDCD'
     },
-    memberGroupPosition: {
+    memberGroup: {
         position: "absolute",
         width: "83px",
         height: "18px",
@@ -101,7 +105,7 @@ const useStyles = makeStyles({
         width: "312px",
         height: "51px",
         left: "23px",
-        top: "115px",
+        top: "100px",
 
         fontFamily: "Lato",
         fontStyle: 'normal',
@@ -110,21 +114,32 @@ const useStyles = makeStyles({
         lineHeight: '17px',
         textAlign: 'center',
         color: '#727272'
-    }
+    },
+    avatarSize: {
+        width: "95px",
+        height: "95px",
+        border: "3px solid #288FB0",
+        boxSizing: "border-box",
+        borderRadius: "20px"
+      }
   });
 
-  const Profile = () => {
+  const Profile = ({ memberIndex }, {mouseX}) => {
       const classes = useStyles();
+      console.log(mouseX)
       return (
-        <div className={classes.cardContainer}>
-          <div className={classes.memberPic}></div>
+        // className={{ left: {mouseX} }}
+        <div className={classes.cardContainer}  >
+          <div className={classes.memberPic}>
+            <Avatar variant="rounded" alt="Remy Sharp" src={members[memberIndex].picture.cartoon} className={classes.avatarSize} />
+          </div>
           <div className={classes.memberCard}>
-            <div className={classes.memberName}>Shar Rukh khan</div>
-            <div className={classes.memberPosition}>Chairman</div>
-            <div className={classes.memberGroupPosition}>Nucleus</div>
+            <div className={classes.memberName}>{members[memberIndex].name}</div>
+            <div className={classes.memberPosition}>{members[memberIndex].position}</div>
+            <div className={classes.memberGroup}>{members[memberIndex].group}</div>
             <div className={classes.contactIcon1}></div>
             <div className={classes.contactIcon2}></div>
-            <div className={classes.memberQuote}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis id dicta a! Soluta iusto culpa nam provident temporibus unde et.</div>
+            <div className={classes.memberQuote}>{members[memberIndex].description}</div>
           </div>
         </div>
       );
