@@ -1,7 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { useState } from "react";
 import Avatar from '@material-ui/core/Avatar';
 import Marquee from "react-fast-marquee";
 import Profile from "./ProfileCard";
+import members from "../../../resources/members";
 
 const useStyles = makeStyles((theme) => ({
     large: {
@@ -17,52 +19,37 @@ const useStyles = makeStyles((theme) => ({
     profileCardDiv: {
         marginBottom: "0.95em",
         position: "relative",
-        left: "215px",
+        left: "0px",
         display: "flex",
         textAlign: "center",
     },
-    antiCollapser: {
-        minHeight: "229px"
+    marginProvider:{
+        marginLeft: "0.5em",
+        marginRight: "0.5em",
     }
 }));
 
 
 
-
 const Slider = ({isShown, setIsShown}) => {
     const classes = useStyles();
-
+    const [mouseCord, setMouseCord] = useState({ x: null, y: null });
+    const updateMousePosition = ev => {
+        setMouseCord({ x: ev.clientX, y: ev.clientY });
+      };
     return (
         <div >
-            <div className={classes.profileCardDiv}>
+            <div className={classes.profileCardDiv} onMouseMove={updateMousePosition}>
             {isShown.show && (
-                <Profile></Profile>
+                <Profile memberIndex={isShown.memberIndex} mousePosition={mouseCord.x}></Profile>
             )}
-            <div className={classes.antiCollapser}></div>
             </div >
             <Marquee speed="70" pauseOnHover="true">
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
-                <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src="./images.jpeg" className={classes.large} />
-                <div className={classes.gap}></div>
+                {members.map((member)=>
+                    <div key={member} className={classes.marginProvider}>
+                        <Avatar onMouseOver={() => setIsShown(true, 1)} onMouseOut={() => setIsShown(false)} alt="Remy Sharp" src={member.picture.cartoon} className={classes.large} />
+                    </div>
+                )}
             </Marquee>
         </div>
         
