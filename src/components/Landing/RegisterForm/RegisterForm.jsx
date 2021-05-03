@@ -154,6 +154,13 @@ const RegisterForm = () => {
       })
 			.then((response) => {
 					console.log(response.data);
+					setData({
+						first: "",
+						last: "",
+						email: "",
+						password: "",
+						confirm: "",
+					})
 			})
       .catch((error) => {
 				if(error.response.data.code==="USEREXISTS") {
@@ -161,7 +168,6 @@ const RegisterForm = () => {
 				}
 			});
 			event.preventDefault();
-			event.target.reset();
   	}
 	}
 
