@@ -30,6 +30,13 @@ const useStyles = makeStyles({
   },
 });
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 const MemberCount = ({ count, setCount }) => {
   const classes = useStyles();
 
@@ -52,6 +59,7 @@ const MemberCount = ({ count, setCount }) => {
         <Button
           variant={"contained"}
           color={"secondary"}
+          onClick={scrollToTop}
           className={classes.registerButton}
         >
           <Typography

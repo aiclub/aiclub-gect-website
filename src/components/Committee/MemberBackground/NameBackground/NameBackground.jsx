@@ -35,7 +35,7 @@ const NameBackground = ({ name }) => {
 
   return (
     <div className={classes.backgroundContainer}>
-      {[...Array(Math.ceil(window.innerHeight / 100))].map((_, index) => {
+      {[...Array(Math.ceil(window.innerHeight / 80))].map((_, index) => {
         return (
           <Typography
             key={index}

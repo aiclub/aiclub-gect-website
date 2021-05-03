@@ -38,7 +38,7 @@ const Committee = () => {
   // Get the current member being hovered.
   const [count, setCount] = useState(0);
   const [hover, setHover] = useState({ show: false, memberIndex: -1 });
-  
+
   const classes = useStyles(hover.show);
 
   // Fetching number of registered users.

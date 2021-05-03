@@ -20,7 +20,8 @@ const members = [
     group: "Nucleus",
     email: "aashikms25@gmail.com",
     linkedIn: "https://www.linkedin.com/in/aashikms",
-    description: "Robotics and AI are the future. Applying AI techniques like Computer Vision ,Motion planning and control etc are revolutionary. Colabarative robotics(Co-bots) and self-driving cars are great examples for the application of these technologies.",
+    description:
+      "Robotics and AI are the future. Applying AI techniques like Computer Vision ,Motion planning and control etc are revolutionary. Colabarative robotics(Co-bots) and self-driving cars are great examples for the application of these technologies.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -184,11 +185,11 @@ const members = [
     },
   },
   {
-    name: "Anwar Sadique",
-    position: "Faculty",
-    group: "Faculty",
-    email: "",
-    linkedIn: "",
+    name: "Nakshathra Nazer",
+    position: "Execom",
+    group: "Axon",
+    email: "nakshathra.nazer@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/nakshathra-nazer-3b95ba1a4",
     description: "",
     picture: {
       original: TempImage,
@@ -197,11 +198,11 @@ const members = [
     },
   },
   {
-    name: "Anwar Sadique",
-    position: "Faculty",
-    group: "Faculty",
-    email: "",
-    linkedIn: "",
+    name: "Neha Susan",
+    position: "Execom",
+    group: "Axon",
+    email: "nehasusan369@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/neha-susan-manoj-965a391b3",
     description: "",
     picture: {
       original: TempImage,
@@ -210,9 +211,9 @@ const members = [
     },
   },
   {
-    name: "Anwar Sadique",
-    position: "Faculty",
-    group: "Faculty",
+    name: "Niranjan",
+    position: "Execom",
+    group: "Axon",
     email: "",
     linkedIn: "",
     description: "",
