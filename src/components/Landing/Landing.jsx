@@ -2,17 +2,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import RegisterForm from "./RegisterForm/RegisterForm";
 import AnimatedEve  from "./AnimatedEve/AnimatedEve";
 import TitleBlock from "./TitleBlock/TitleBlock";
+import Pattern from "./Pattern/Pattern";
 
 const useStyles = makeStyles({
   landingContainer: {
     position: 'relative',
     height: "100vh",
-  },
-  top: {
-    background: "black",
-    height: "90vh",
-    width: "100vw",
-    maxWidth: "100%",
   },
   registerForm: {
     position: 'absolute',
@@ -37,10 +32,9 @@ const Landing = () => {
 
   return (
     <div className={classes.landingContainer}>
+      <Pattern></Pattern>
       <div className={classes.registerForm}>
         <RegisterForm></RegisterForm>
-      </div>
-      <div className={classes.top}>
       </div>
       <div className={classes.titleBlock}>
         <TitleBlock></TitleBlock>
