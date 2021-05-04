@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Slider from "./Members/SlidingProfile";
 import MemberCount from "./MemberCount/MemberCount";
+import BackToTopButton from "./BackToTopButton/BackToTopButton";
 import MemberBackground from "./MemberBackground/MemberBackground";
 import Background from "../../assets/images/committee/background.png";
 
@@ -32,6 +33,13 @@ const useStyles = makeStyles({
     width: "100%",
     marginBottom: 20,
   },
+  backToTopButtonContainer: {
+    position: "absolute",
+    right: 0,
+    bottom: 0,
+    margin: 30,
+    zIndex: 50,
+  },
 });
 
 const Committee = () => {
@@ -56,6 +64,19 @@ const Committee = () => {
       });
   }, []);
 
+  // Define scroll listener.
+  // Clears the committe page on scroll to top.
+  const scrollListener = () => {
+    if (window.pageYOffset === 0) setTimeout(() => setHover(false), 250);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollListener, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
+  }, []);
+
   return (
     <div className={classes.committeeContainer}>
       {hover.show ? (
@@ -76,6 +97,11 @@ const Committee = () => {
           }
         />
       </div>
+      {hover.show && (
+        <div className={classes.backToTopButtonContainer}>
+          <BackToTopButton />
+        </div>
+      )}
     </div>
   );
 };

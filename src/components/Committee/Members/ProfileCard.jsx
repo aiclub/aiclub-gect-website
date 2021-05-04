@@ -131,7 +131,7 @@ const useStyles = makeStyles({
             <div className={classes.memberPosition}>{members[memberIndex].position}</div>
             <div className={classes.memberGroup}>{members[memberIndex].group}</div>
             <IconButton color={"primary"} className={classes.contactIcon1} onClick={()=> window.open(members[memberIndex].linkedIn, "_blank")}><LinkedInIcon /></IconButton>
-            <IconButton color={"secondary"} className={classes.contactIcon2} onClick={()=> window.open(`http://mailto:${members[memberIndex].email}`, "_blank")}><EmailRoundedIcon /></IconButton>
+            <IconButton color={"secondary"} className={classes.contactIcon2} onClick={()=> window.open("https://gmail.com", "_blank")}><EmailRoundedIcon /></IconButton>
             <div className={classes.memberQuote}>{members[memberIndex].description}</div>
           </Card>
         </div>
