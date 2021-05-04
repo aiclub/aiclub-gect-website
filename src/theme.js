@@ -12,6 +12,10 @@ const theme = createMuiTheme({
       main: "#288FB0",
       light: "#408AD3",
     },
+    error: {
+      main: "#BB001B",
+      light: "#EA4335",
+    },
   },
   typography: {
     fontFamily: "Lato",

@@ -32,7 +32,8 @@
     "mgmcdermott.vscode-language-babel",
     "michelemelluso.gitignore",
     "yummygum.city-lights-icon-vsc",
-    "yummygum.city-lights-theme"
+    "yummygum.city-lights-theme",
+    "formulahendry.auto-rename-tag"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
