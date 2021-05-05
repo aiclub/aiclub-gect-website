@@ -6,14 +6,18 @@ import IconButton from "@material-ui/core/IconButton";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
 
-const useStyles = makeStyles({
-
+const useStyles = makeStyles((theme)=>({
     cardContainer: {
         position: "absolute",
         width: "358px",
         height: "229px",
         left: "30px",
         top: "-240px",
+
+        [theme.breakpoints.down("md")]:{
+            width: "252px",
+            height: "139px",
+        }
     },
     memberCard: {
         position: "absolute",
@@ -23,15 +27,34 @@ const useStyles = makeStyles({
         top: "37px",
         background: "#FFFFFF",
         boxShadow: "0px 4px 10px 3px rgba(0, 0, 0, 0.25)",
-        borderRadius: "20px"
+        borderRadius: "20px",
+       
+        [theme.breakpoints.down("md")]:{
+            width: "252px",
+            height: "120px",
+        }
     },
+
+    // Profile Pic
     memberPic: {
         position: "absolute",
         left: "18px",
         top: "0px",
         zIndex: 1,
     },
-    
+    avatarSize: {
+        width: "95px",
+        height: "95px",
+        border: "3px solid #288FB0",
+        boxSizing: "border-box",
+        borderRadius: "20px",
+        
+        [theme.breakpoints.down("md")]:{
+            width: "82px",
+            height: "82px",
+        }
+      },
+    // member name div
     memberName: {
         position: "absolute",
         width: "196px",
@@ -42,12 +65,21 @@ const useStyles = makeStyles({
         fontFamily: "Lato",
         fontStyle: 'normal',
         fontWeight: '800',
-        fontSize: '24px',
+        fontSize: '23px',
         lineHeight: '30px',
         textAlign: 'left',
         color: '#000000',
         whiteSpace: "nowrap",
         overflow: "hidden",
+        
+        [theme.breakpoints.down("md")]:{
+            width: "137px",
+            height: "21px",
+            fontSize: '15px',
+            lineHeight: '21px',
+            left: '110px',
+            top: '8px'
+        }
     
     },
     memberPosition: {
@@ -62,7 +94,15 @@ const useStyles = makeStyles({
         fontSize: '15px',
         lineHeight: '18px',
         textAlign: 'left',
-        color: '#CDCDCD'
+        color: '#CDCDCD',
+        
+        [theme.breakpoints.down("md")]:{
+            height: "12px",
+            fontSize: '20px',
+            lineHeight: '12px',
+            left: '110px',
+            top: '60px'
+        }
     },
     memberGroup: {
         position: "absolute",
@@ -77,14 +117,28 @@ const useStyles = makeStyles({
         lineHeight: '18px',
         textAlign: 'right',
         color: '#CDCDCD',
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        
+        [theme.breakpoints.down("md")]:{
+
+            height: "12px",
+            fontSize: '20px',
+            lineHeight: '12px',
+            left: '110px',
+            top: '90px'
+        }
     },
     contactIcon1: {
         position: "absolute",
         width: "22px",
         height: "22px",
-        left: "128px",
+        left: "120px",
         top: "65px",
+        
+        [theme.breakpoints.down("md")]:{
+            left: '110px',
+            top: '30px'
+        }
     },
     contactIcon2: {
         position: "absolute",
@@ -92,6 +146,12 @@ const useStyles = makeStyles({
         height: "22px",
         left: "162px",
         top: "65px",
+        
+        [theme.breakpoints.down("md")]:{
+ 
+            left: '140px',
+            top: '30px'
+        }
     },
     memberQuote: {
         position: "absolute",
@@ -106,16 +166,16 @@ const useStyles = makeStyles({
         fontSize: '14px',
         lineHeight: '17px',
         textAlign: 'center',
-        color: '#727272'
+        color: '#727272',
+        
+        [theme.breakpoints.down("md")]:{
+            display: 'none'
+        }
+
     },
-    avatarSize: {
-        width: "95px",
-        height: "95px",
-        border: "3px solid #288FB0",
-        boxSizing: "border-box",
-        borderRadius: "20px"
-      }
-  });
+    
+    
+  }));
 
   const Profile = ({ memberIndex }, {mouseX}) => {
       const classes = useStyles();

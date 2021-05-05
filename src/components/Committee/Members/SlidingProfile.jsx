@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     large: {
       width: theme.spacing(16),
       height: theme.spacing(16),
+
+      [theme.breakpoints.down("md")]:{
+            width: "70px",
+            height: "70px",
+        }
     },
     avatarSlider:{
         display:'flex',
@@ -46,8 +51,8 @@ const Slider = ({isShown, setIsShown}) => {
             </div >
             <Marquee speed="70" pauseOnHover="true">
                 {members.map((member, index)=>
-                    <div key={index} className={classes.marginProvider}>
-                        <Avatar onMouseOver={() => setIsShown(true, index)} alt="Remy Sharp" src={member.picture.cartoon} className={classes.large} />
+                    <div key={member} className={classes.marginProvider}>
+                        <Avatar onMouseOver={() => setIsShown(true, index)} alt={member.name} src={member.picture.cartoon} className={classes.large} />
                     </div>
                 )}
             </Marquee>
