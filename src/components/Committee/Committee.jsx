@@ -55,7 +55,6 @@ const Committee = () => {
     axios
       .get("https://ai-club.herokuapp.com/api/user/count")
       .then((res) => {
-        console.log(res.data);
         setCount(res.data.count);
       })
       .catch((err) => {

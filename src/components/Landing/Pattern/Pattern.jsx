@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 const useStyles = (theme) => ({
 	test: {
 		height: "90vh",
-		width: "100vw",
+		width: "100%",
 		zIndex: '-1',
 		background: "black",
 	}

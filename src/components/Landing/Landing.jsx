@@ -1,30 +1,36 @@
 import { makeStyles } from "@material-ui/core/styles";
+
 import RegisterForm from "./RegisterForm/RegisterForm";
-import AnimatedEve  from "./AnimatedEve/AnimatedEve";
+import AnimatedEve from "./AnimatedEve/AnimatedEve";
 import TitleBlock from "./TitleBlock/TitleBlock";
 import Pattern from "./Pattern/Pattern";
 
 const useStyles = makeStyles({
   landingContainer: {
-    position: 'relative',
+    position: "relative",
     height: "100vh",
   },
+
   registerForm: {
-    position: 'absolute',
-    right: '10px',
-    top: '10px',
-    color: 'white'
+    margin: 20,
   },
+
   animatedEve: {
-    position: 'absolute',
-    bottom: '0px',
-    left: '0px'
+    position: "absolute",
+    bottom: "0px",
+    left: "0px",
   },
-  titleBlock:{
-    position: 'absolute',
-    left: '10%',
-    top: '15%',
-  }
+
+  titleFormContainer: {
+    position: "absolute",
+    width: "100vw",
+    display: "flex",
+    height: "90vh",
+    justifyContent: "space-between",
+    alignItems: "center",
+    zIndex: 10,
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+  },
 });
 
 const Landing = () => {
@@ -32,16 +38,17 @@ const Landing = () => {
 
   return (
     <div className={classes.landingContainer}>
-      <Pattern></Pattern>
-      <div className={classes.registerForm}>
-        <RegisterForm></RegisterForm>
-      </div>
-      <div className={classes.titleBlock}>
+      <div className={classes.titleFormContainer}>
+        <div />
         <TitleBlock></TitleBlock>
+        <div className={classes.registerForm}>
+          <RegisterForm></RegisterForm>
+        </div>
       </div>
       <div className={classes.animatedEve}>
         <AnimatedEve></AnimatedEve>
       </div>
+      <Pattern></Pattern>
     </div>
   );
 };

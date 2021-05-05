@@ -10,31 +10,36 @@ import EveTriangle from "../../../assets/images/landing/eve_triangle.svg";
 import "./AnimatedEve.css";
 
 // Overriding @material-ui styles
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   wrapper: {
     position: "relative",
     width: 325,
     height: 325,
+
+    [theme.breakpoints.down("sm")]: {
+      width: 217,
+      height: 217,
+    },
   },
   eve: {
     top: 0,
-    left: -30,
+    left: "-10%",
     zIndex: 30,
     position: "absolute",
   },
   eveSquare: {
     zIndex: 10,
-    left: -50,
-    top: 50,
+    left: "-18%",
+    top: "15%",
     position: "absolute",
   },
   eveTriangle: {
     zIndex: 20,
     bottom: 0,
-    left: 100,
+    left: "30%",
     position: "absolute",
   },
-});
+}));
 
 const AnimatedEve = () => {
   const classes = useStyles();

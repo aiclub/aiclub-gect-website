@@ -6,10 +6,20 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 // Overriding @material ui styles
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   size: {
     width: 800,
     height: 300,
+
+    [theme.breakpoints.down("md")]: {
+      width: 600,
+      height: 250,
+    },
+
+    [theme.breakpoints.down("xs")]: {
+      height: 150,
+      width: 400,
+    },
   },
   wrapper: {
     position: "relative",
@@ -26,15 +36,49 @@ const useStyles = makeStyles({
   title: {
     position: "absolute",
     bottom: "-6px",
+    fontSize: 90,
+
+    [theme.breakpoints.down("lg")]: {
+      fontSize: 75,
+    },
+
+    [theme.breakpoints.down("md")]: {
+      fontSize: 60,
+    },
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 50,
+    },
+
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 40,
+    },
   },
   subTitleWrapper: {
     position: "absolute",
   },
   subtitle: {
     opacity: "25%",
-    margin: "40px 0",
+    margin: "5% 0",
+    fontSize: 60,
+
+    [theme.breakpoints.down("lg")]: {
+      fontSize: 50,
+    },
+
+    [theme.breakpoints.down("md")]: {
+      fontSize: 45,
+    },
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 40,
+    },
+
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 30,
+    },
   },
-});
+}));
 
 const TitleBlock = () => {
   const classes = useStyles();
