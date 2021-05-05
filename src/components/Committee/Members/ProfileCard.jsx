@@ -14,6 +14,10 @@ const useStyles = makeStyles((theme)=>({
         left: "30px",
         top: "-240px",
 
+        [theme.breakpoints.down("md")]:{
+            width: "252px",
+            height: "139px",
+        }
     },
     memberCard: {
         position: "absolute",
@@ -25,7 +29,10 @@ const useStyles = makeStyles((theme)=>({
         boxShadow: "0px 4px 10px 3px rgba(0, 0, 0, 0.25)",
         borderRadius: "20px",
        
-        
+        [theme.breakpoints.down("md")]:{
+            width: "252px",
+            height: "120px",
+        }
     },
 
     // Profile Pic
@@ -42,7 +49,10 @@ const useStyles = makeStyles((theme)=>({
         boxSizing: "border-box",
         borderRadius: "20px",
         
-
+        [theme.breakpoints.down("md")]:{
+            width: "82px",
+            height: "82px",
+        }
       },
     // member name div
     memberName: {
@@ -62,6 +72,14 @@ const useStyles = makeStyles((theme)=>({
         whiteSpace: "nowrap",
         overflow: "hidden",
         
+        [theme.breakpoints.down("md")]:{
+            width: "137px",
+            height: "21px",
+            fontSize: '15px',
+            lineHeight: '21px',
+            left: '110px',
+            top: '8px'
+        }
     
     },
     memberPosition: {
@@ -78,6 +96,13 @@ const useStyles = makeStyles((theme)=>({
         textAlign: 'left',
         color: '#CDCDCD',
         
+        [theme.breakpoints.down("md")]:{
+            height: "12px",
+            fontSize: '20px',
+            lineHeight: '12px',
+            left: '110px',
+            top: '60px'
+        }
     },
     memberGroup: {
         position: "absolute",
@@ -93,6 +118,15 @@ const useStyles = makeStyles((theme)=>({
         textAlign: 'right',
         color: '#CDCDCD',
         textTransform: "uppercase",
+        
+        [theme.breakpoints.down("md")]:{
+
+            height: "12px",
+            fontSize: '20px',
+            lineHeight: '12px',
+            left: '110px',
+            top: '90px'
+        }
     },
     contactIcon1: {
         position: "absolute",
@@ -113,6 +147,11 @@ const useStyles = makeStyles((theme)=>({
         left: "162px",
         top: "65px",
         
+        [theme.breakpoints.down("md")]:{
+ 
+            left: '140px',
+            top: '30px'
+        }
     },
     memberQuote: {
         position: "absolute",
@@ -128,7 +167,10 @@ const useStyles = makeStyles((theme)=>({
         lineHeight: '17px',
         textAlign: 'center',
         color: '#727272',
-    
+        
+        [theme.breakpoints.down("md")]:{
+            display: 'none'
+        }
 
     },
     
