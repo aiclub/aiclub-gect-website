@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    background: (hover) => (hover ? "#F6F6F6" : `url(${Background})`),
+    background: `url(${Background})`,
   },
   memberCountContainer: {
     position: "absolute",
@@ -47,7 +47,7 @@ const Committee = () => {
   const [count, setCount] = useState(0);
   const [hover, setHover] = useState({ show: false, memberIndex: -1 });
 
-  const classes = useStyles(hover.show);
+  const classes = useStyles();
 
   // Fetching number of registered users.
   // Lifted state from `MemberCount` component to prevent API calls on every render.
@@ -55,7 +55,6 @@ const Committee = () => {
     axios
       .get("https://ai-club.herokuapp.com/api/user/count")
       .then((res) => {
-        console.log(res.data);
         setCount(res.data.count);
       })
       .catch((err) => {

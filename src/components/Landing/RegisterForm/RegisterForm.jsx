@@ -15,13 +15,20 @@ import "../../../assets/fonts/Poppins/Poppins-ExtraBold.ttf";
 
 const axios = require("axios");
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   formdiv: {
     background: "#F6F6F6",
-    height: "450px",
-    width: "300px",
     padding: "20px",
     borderRadius: "10px",
+    width: "400px",
+
+    [theme.breakpoints.down("md")]: {
+      width: "325px",
+    },
+
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
 
   form: {
@@ -47,11 +54,10 @@ const useStyles = makeStyles({
   },
 
   filledName: {
-    width: "125px",
-    background: "#DEEAFF",
+    background: "#e6efff",
     borderRadius: "10px",
     fontFamily: "Lato",
-    height: "45px",
+    margin: "5px 0",
     "&:hover": {
       background: "#EBF2FF",
     },
@@ -61,10 +67,10 @@ const useStyles = makeStyles({
   },
 
   filledInput: {
-    background: "#DEEAFF",
+    background: "#e6efff",
     borderRadius: "10px",
     fontFamily: "Lato",
-    height: "45px",
+    margin: "5px 0",
     "&:hover": {
       background: "#EBF2FF",
     },
@@ -76,6 +82,7 @@ const useStyles = makeStyles({
   checkControl: {
     fontFamily: "Lato",
     color: "grey",
+    margin: "10px 0",
   },
 
   checkBox: {
@@ -90,7 +97,7 @@ const useStyles = makeStyles({
     color: "white",
     textTransform: "none",
   },
-});
+}));
 
 const RegisterForm = () => {
   const classes = useStyles();
@@ -139,48 +146,48 @@ const RegisterForm = () => {
   };
 
   const handleSubmit = (event) => {
-    if(data.password !== data.confirm) { 
-	  	alert("Passwords do not match");
-			event.preventDefault();
-		}
-
-    else {
+    if (data.password !== data.confirm) {
+      alert("Passwords do not match");
+      event.preventDefault();
+    } else {
       console.log(data);
-			axios.post("https://ai-club.herokuapp.com/api/user/register", {
+      axios
+        .post("https://ai-club.herokuapp.com/api/user/register", {
           firstName: data.first,
           lastName: data.last,
           email: data.email,
           password: data.password,
-      })
-			.then((response) => {
-					console.log(response.data);
-					setData({
-						first: "",
-						last: "",
-						email: "",
-						password: "",
-						confirm: "",
-					})
-			})
-      .catch((error) => {
-				if(error.response.data.code==="USEREXISTS") {
-					alert("Email is already in use");
-				}
-			});
-			event.preventDefault();
-  	}
-	}
+        })
+        .then((response) => {
+          console.log(response.data);
+          setData({
+            first: "",
+            last: "",
+            email: "",
+            password: "",
+            confirm: "",
+          });
+        })
+        .catch((error) => {
+          if (error.response.data.code === "USEREXISTS") {
+            alert("Email is already in use");
+          }
+        });
+      event.preventDefault();
+    }
+  };
 
   return (
     <div className={classes.formdiv}>
       <form className={classes.form} onSubmit={handleSubmit}>
-        <Typography className={classes.heading}>
-          Hello! <br/> Pre-Register to AI club today!
+        <Typography className={classes.heading} gutterBottom>
+          Hello! <br /> Pre-Register to <br></br> AI club today!
         </Typography>
         <div className={classes.names}>
           <FilledInput
             placeholder="First Name"
             className={classes.filledName}
+            style={{ marginRight: 5 }}
             name="first"
             value={data.first}
             onChange={handleChange}
@@ -190,6 +197,7 @@ const RegisterForm = () => {
           <FilledInput
             placeholder="Last Name"
             className={classes.filledName}
+            style={{ marginLeft: 5 }}
             name="last"
             value={data.last}
             onChange={handleChange}
@@ -253,7 +261,7 @@ const RegisterForm = () => {
               checked={states.check}
               onChange={handleChecked}
               name="check"
-			  required={true}
+              required={true}
             />
           }
           label="I agree to learn, collaborate and contribute"
