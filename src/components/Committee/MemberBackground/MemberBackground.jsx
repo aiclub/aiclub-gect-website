@@ -9,6 +9,7 @@ import NameBackground from "./NameBackground/NameBackground";
 const useStyles = makeStyles({
   memberContainer: {
     height: "100vh",
+    background: "#F6F6F6",
   },
   image: {
     position: "absolute",

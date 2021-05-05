@@ -51,9 +51,9 @@ const Slider = ({isShown, setIsShown}) => {
             </div >
             <Marquee speed="70" pauseOnHover="true">
                 {members.map((member, index)=>
-                    <div key={member} className={classes.marginProvider}>
-                        <Avatar onMouseOver={() => setIsShown(true, index)} alt={member.name} src={member.picture.cartoon} className={classes.large} />
-                    </div>
+                    <div key={index} className={classes.marginProvider}>
+                        <Avatar onMouseOver={() => setIsShown(true, index)} alt="Remy Sharp" src={member.picture.cartoon} className={classes.large} />
+                   </div>
                 )}
             </Marquee>
         </div>
