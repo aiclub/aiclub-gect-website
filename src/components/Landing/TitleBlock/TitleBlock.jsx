@@ -2,22 +2,25 @@
 
 import classNames from "classnames";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+
+import ArchIcon from "../../../assets/images/landing/arch.png";
 
 // Overriding @material ui styles
 const useStyles = makeStyles((theme) => ({
   size: {
     width: 800,
-    height: 300,
+    height: 350,
 
     [theme.breakpoints.down("md")]: {
       width: 600,
-      height: 250,
+      height: 285,
     },
 
     [theme.breakpoints.down("xs")]: {
-      height: 150,
+      height: 200,
       width: 400,
     },
   },
@@ -78,9 +81,34 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 30,
     },
   },
+  registerButton: {
+    borderRadius: 50,
+    padding: "5px 20px",
+
+    [theme.breakpoints.down("xs")]: {
+      height: 30,
+    },
+  },
+  registerButtonText: {
+    fontSize: 20,
+
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+    },
+  },
+  archButton: {
+    position: "absolute",
+    bottom: 0,
+    left: "50%",
+    transform: "translateX(-50%)",
+  },
+  arch: {
+    height: 60,
+    width: 130,
+  },
 }));
 
-const TitleBlock = () => {
+const TitleBlock = ({ showForm, small = false }) => {
   const classes = useStyles();
 
   return (
@@ -121,6 +149,25 @@ const TitleBlock = () => {
           </Typography>
         </Grid>
       </Grid>
+      <div className={classes.archButton}>
+        {small ? (
+          <Button
+            variant={"contained"}
+            color={"secondary"}
+            onClick={() => showForm(true)}
+            className={classes.registerButton}
+          >
+            <Typography
+              variant={"subtitle2"}
+              className={classes.registerButtonText}
+            >
+              PRE-REGISTER
+            </Typography>
+          </Button>
+        ) : (
+          <img src={ArchIcon} alt="The Great Arch" className={classes.arch} />
+        )}
+      </div>
     </div>
   );
 };
