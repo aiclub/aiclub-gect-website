@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme)=>({
         height: "229px",
         left: "30px",
         top: "-240px",
+
         [theme.breakpoints.down("md")]:{
             width: "252px",
             height: "139px",
@@ -27,6 +28,7 @@ const useStyles = makeStyles((theme)=>({
         background: "#FFFFFF",
         boxShadow: "0px 4px 10px 3px rgba(0, 0, 0, 0.25)",
         borderRadius: "20px",
+       
         [theme.breakpoints.down("md")]:{
             width: "252px",
             height: "120px",
@@ -46,6 +48,7 @@ const useStyles = makeStyles((theme)=>({
         border: "3px solid #288FB0",
         boxSizing: "border-box",
         borderRadius: "20px",
+        
         [theme.breakpoints.down("md")]:{
             width: "82px",
             height: "82px",
@@ -68,6 +71,7 @@ const useStyles = makeStyles((theme)=>({
         color: '#000000',
         whiteSpace: "nowrap",
         overflow: "hidden",
+        
         [theme.breakpoints.down("md")]:{
             width: "137px",
             height: "21px",
@@ -91,6 +95,7 @@ const useStyles = makeStyles((theme)=>({
         lineHeight: '18px',
         textAlign: 'left',
         color: '#CDCDCD',
+        
         [theme.breakpoints.down("md")]:{
             height: "12px",
             fontSize: '20px',
@@ -113,6 +118,7 @@ const useStyles = makeStyles((theme)=>({
         textAlign: 'right',
         color: '#CDCDCD',
         textTransform: "uppercase",
+        
         [theme.breakpoints.down("md")]:{
 
             height: "12px",
@@ -128,6 +134,7 @@ const useStyles = makeStyles((theme)=>({
         height: "22px",
         left: "120px",
         top: "65px",
+        
         [theme.breakpoints.down("md")]:{
             left: '110px',
             top: '30px'
@@ -139,6 +146,7 @@ const useStyles = makeStyles((theme)=>({
         height: "22px",
         left: "162px",
         top: "65px",
+        
         [theme.breakpoints.down("md")]:{
  
             left: '140px',
@@ -159,6 +167,7 @@ const useStyles = makeStyles((theme)=>({
         lineHeight: '17px',
         textAlign: 'center',
         color: '#727272',
+        
         [theme.breakpoints.down("md")]:{
             display: 'none'
         }
