@@ -9,6 +9,9 @@ import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Typography from "@material-ui/core/Typography";
+import Alert from "@material-ui/lab/Alert";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Snackbar from "@material-ui/core/Snackbar";
 import { makeStyles } from "@material-ui/core/styles";
 import "../../../assets/fonts/Lato/Lato-Regular.ttf";
 import "../../../assets/fonts/Poppins/Poppins-ExtraBold.ttf";
@@ -20,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#F6F6F6",
     padding: "20px",
     borderRadius: "10px",
-    width: "400px",
+    width: "350px",
 
     [theme.breakpoints.down("md")]: {
       width: "325px",
@@ -115,6 +118,10 @@ const RegisterForm = () => {
     showConfirm: false,
     notMatched: false,
     check: false,
+    open: false,
+    openPass: false,
+    registerError: false,
+    isLoading: false
   });
 
   const handleChange = (event) => {
@@ -145,12 +152,44 @@ const RegisterForm = () => {
     });
   };
 
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setStates({
+      ...states,
+      registerError: false,
+      open: false
+    });
+  };
+
+  const handleClosePass = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setStates({
+      ...states,
+      openPass: false
+    });
+  };
+
   const handleSubmit = (event) => {
     if (data.password !== data.confirm) {
-      alert("Passwords do not match");
+      setStates({
+        ...states,
+        openPass: true,
+        notMatched: true
+      })
       event.preventDefault();
-    } else {
+    } 
+    else {
       console.log(data);
+      setStates({
+        ...states,
+        isLoading: true
+      })
       axios
         .post("https://ai-club.herokuapp.com/api/user/register", {
           firstName: data.first,
@@ -167,12 +206,21 @@ const RegisterForm = () => {
             password: "",
             confirm: "",
           });
+          setStates({
+            ...states,
+            check: false,
+            open: true
+          })
         })
         .catch((error) => {
           if (error.response.data.code === "USEREXISTS") {
-            alert("Email is already in use");
+            setStates({
+              ...states,
+              open: true,
+              registerError: true
+            })
           }
-        });
+        })
       event.preventDefault();
     }
   };
@@ -272,8 +320,32 @@ const RegisterForm = () => {
           className={classes.submit}
           type="submit"
         >
-          Pre-Register
+          {
+            states.isLoading ? (
+            <CircularProgress size={24} />
+            ) : (
+            "Pre-Register"
+          )}
         </Button>
+        {states.notMatched ? (
+          <Snackbar anchorOrigin={{vertical: "top", horizontal: "center"}} open={states.openPass} autoHideDuration={1500} onClose={handleClosePass}>
+            <Alert variant="filled" severity="error" onClose={handleClosePass}>
+              Passwords do not match
+            </Alert>
+          </Snackbar> ) : (
+          <div></div>
+        )}
+        <Snackbar anchorOrigin={{vertical: "top", horizontal: "center"}} open={states.open} autoHideDuration={1500} onClose={handleClose}>
+          {states.registerError ? (
+            <Alert variant="filled" severity="error" onClose={handleClose}>
+              Email already registered
+            </Alert>
+            ) : (
+            <Alert variant="filled" severity="success" onClose={handleClose}>
+              User registered
+            </Alert>
+          )}
+        </Snackbar>
       </form>
     </div>
   );
