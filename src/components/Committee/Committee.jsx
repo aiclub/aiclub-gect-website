@@ -42,9 +42,11 @@ const useStyles = makeStyles({
   },
 });
 
-const Committee = () => {
+const Committee = ({ small }) => {
   // Get the current member being hovered.
   const [count, setCount] = useState(0);
+
+  // Get the currently hovered member.
   const [hover, setHover] = useState({ show: false, memberIndex: -1 });
 
   const classes = useStyles();
@@ -82,24 +84,30 @@ const Committee = () => {
         <MemberBackground memberIndex={hover.memberIndex} />
       ) : (
         <div className={classes.memberCountContainer}>
-          <MemberCount count={count} setCount={setCount} />
+          <MemberCount count={count} setCount={setCount} small={small} />
         </div>
       )}
-      <div className={classes.sliderContainer}>
-        <Slider
-          isShown={hover}
-          setIsShown={(show, memberIndex = -1) =>
-            setHover({
-              show: show,
-              memberIndex: memberIndex,
-            })
-          }
-        />
-      </div>
-      {hover.show && (
-        <div className={classes.backToTopButtonContainer}>
-          <BackToTopButton />
-        </div>
+
+      {/* Render profile slider for large screens */}
+      {!small && (
+        <>
+          <div className={classes.sliderContainer}>
+            <Slider
+              isShown={hover}
+              setIsShown={(show, memberIndex = -1) =>
+                setHover({
+                  show: show,
+                  memberIndex: memberIndex,
+                })
+              }
+            />
+          </div>
+          {hover.show && (
+            <div className={classes.backToTopButtonContainer}>
+              <BackToTopButton />
+            </div>
+          )}
+        </>
       )}
     </div>
   );
