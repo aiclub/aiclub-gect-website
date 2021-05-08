@@ -8,11 +8,11 @@ import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
 
 const useStyles = makeStyles((theme)=>({
     cardContainer: {
-        position: "absolute",
-        width: "358px",
-        height: "229px",
-        left: "30px",
-        top: "-240px",
+        // position: "absolute",
+        // width: "358px",
+        // height: "229px",
+        // left: "30px",
+        // top: "-240px",
 
         [theme.breakpoints.down("md")]:{
             width: "252px",
@@ -98,10 +98,11 @@ const useStyles = makeStyles((theme)=>({
         
         [theme.breakpoints.down("md")]:{
             height: "12px",
-            fontSize: '20px',
+            fontSize: '15px',
             lineHeight: '12px',
             left: '110px',
-            top: '60px'
+            top: '65px',
+            fontWeight: 700
         }
     },
     memberGroup: {
@@ -122,10 +123,12 @@ const useStyles = makeStyles((theme)=>({
         [theme.breakpoints.down("md")]:{
 
             height: "12px",
-            fontSize: '20px',
+            fontSize: '15px',
             lineHeight: '12px',
             left: '110px',
-            top: '90px'
+            top: '80px',
+            fontWeight: 700,
+            textTransform: "none"
         }
     },
     contactIcon1: {
@@ -177,11 +180,11 @@ const useStyles = makeStyles((theme)=>({
     
   }));
 
-  const Profile = ({ memberIndex }, {mouseX}) => {
+  const Profile = ({ memberIndex }) => {
       const classes = useStyles();
-      console.log(mouseX)
+      console.log(memberIndex)
+
       return (
-        // className={{ left: {mouseX} }}
         <div className={classes.cardContainer}  >
           <div className={classes.memberPic}>
             <Avatar variant="rounded" alt="Remy Sharp" src={members[memberIndex].picture.cartoon} className={classes.avatarSize} />

@@ -6,7 +6,7 @@ import members from "../../../resources/members";
 import NameBackground from "./NameBackground/NameBackground";
 
 // overriding @material ui styles
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   memberContainer: {
     height: "100vh",
     background: "#F6F6F6",
@@ -19,11 +19,17 @@ const useStyles = makeStyles({
     height: "80%",
     opacity: "50%",
     transform: "translateX(-50%)",
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: "auto",
+    }
   },
-});
+}));
 
 const MemberBackground = ({ memberIndex }) => {
   const classes = useStyles();
+  console.log(memberIndex)
 
   return (
     <div className={classes.memberContainer}>

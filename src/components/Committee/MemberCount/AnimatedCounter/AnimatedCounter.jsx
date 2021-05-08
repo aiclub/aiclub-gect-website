@@ -5,11 +5,15 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 // Overriding @material ui styles
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   count: {
     color: "#0E233E",
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 75,
+    }
   },
-});
+}));
 
 const AnimatedCounter = ({ count }) => {
   const [counter, setCounter] = useState(0);
@@ -18,12 +22,12 @@ const AnimatedCounter = ({ count }) => {
 
   useEffect(() => {
     let start = 0;
-    if (start === count) return;
+    if (start >= count) return;
 
     let timer = setInterval(() => {
       start += 1;
       setCounter(start);
-      if (start === count) clearInterval(timer);
+      if (start >= count) clearInterval(timer);
     }, 1000 / count);
   }, [count]);
 
