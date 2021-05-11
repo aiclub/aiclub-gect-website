@@ -203,7 +203,8 @@ const members = [
     group: "Axon",
     email: "nehasusan369@gmail.com",
     linkedIn: "https://www.linkedin.com/in/neha-susan-manoj-965a391b3",
-    description: "",
+    description:
+      "People have been using AI techniques to reap benefits in a gamut of applications. There is still a lot more untrodden paths to be discovered. So, it's future is bright.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -211,12 +212,13 @@ const members = [
     },
   },
   {
-    name: "Niranjan",
+    name: "Niranjan Neelakantan",
     position: "Execom",
     group: "Axon",
-    email: "",
-    linkedIn: "",
-    description: "",
+    email: "niranjan2neelakantan@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/niranjan-neelakantan",
+    description:
+      "We're making this analogy that AI is the new electricity. Electricity transformed industries: agriculture, transportation, communication, manufacturing",
     picture: {
       original: TempImage,
       cartoon: TempImage,
