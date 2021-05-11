@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 const useStyles = (theme) => ({
 	test: {
-		height: "90vh",
+		height: "100vh",
 		width: "100%",
 		zIndex: '-1',
 		background: "black",
