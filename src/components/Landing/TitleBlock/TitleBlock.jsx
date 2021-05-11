@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down("xs")]: {
       height: 200,
-      width: 400,
+      width: 350,
     },
   },
   wrapper: {
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("xs")]: {
-      fontSize: 40,
+      fontSize: 35,
     },
   },
   subTitleWrapper: {
@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("xs")]: {
-      fontSize: 30,
+      fontSize: 25,
     },
   },
   registerButton: {
