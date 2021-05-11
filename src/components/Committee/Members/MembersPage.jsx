@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     width: "100vh",
     marginBottom: 20,
     top: 0,
-    right: 0,
+    right: "-30px",
     transform: "rotate(-90deg) translateX(-50%)",
   },
 
