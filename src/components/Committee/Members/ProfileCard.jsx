@@ -8,11 +8,11 @@ import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
 
 const useStyles = makeStyles((theme)=>({
     cardContainer: {
-        position: "absolute",
-        width: "358px",
-        height: "229px",
-        left: "30px",
-        top: "-240px",
+        // position: "absolute",
+        // width: "358px",
+        // height: "229px",
+        // left: "30px",
+        // top: "-240px",
 
         [theme.breakpoints.down("md")]:{
             width: "252px",
