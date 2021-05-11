@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/aiclub-gect-website/static/css/main.534866ba.chunk.css",
-    "main.js": "/aiclub-gect-website/static/js/main.91d03ea4.chunk.js",
-    "main.js.map": "/aiclub-gect-website/static/js/main.91d03ea4.chunk.js.map",
-    "runtime-main.js": "/aiclub-gect-website/static/js/runtime-main.42c15f3f.js",
-    "runtime-main.js.map": "/aiclub-gect-website/static/js/runtime-main.42c15f3f.js.map",
-    "static/js/2.c4e3c1d9.chunk.js": "/aiclub-gect-website/static/js/2.c4e3c1d9.chunk.js",
-    "static/js/2.c4e3c1d9.chunk.js.map": "/aiclub-gect-website/static/js/2.c4e3c1d9.chunk.js.map",
-    "static/js/3.931efe74.chunk.js": "/aiclub-gect-website/static/js/3.931efe74.chunk.js",
-    "static/js/3.931efe74.chunk.js.map": "/aiclub-gect-website/static/js/3.931efe74.chunk.js.map",
-    "index.html": "/aiclub-gect-website/index.html",
-    "static/css/main.534866ba.chunk.css.map": "/aiclub-gect-website/static/css/main.534866ba.chunk.css.map",
-    "static/js/2.c4e3c1d9.chunk.js.LICENSE.txt": "/aiclub-gect-website/static/js/2.c4e3c1d9.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/aiclub-gect-website/static/media/Poppins-ExtraBold.4ed78cd5.ttf",
-    "static/media/arch.d8a4e71b.png": "/aiclub-gect-website/static/media/arch.d8a4e71b.png",
-    "static/media/background.4bf98716.png": "/aiclub-gect-website/static/media/background.4bf98716.png",
-    "static/media/eve.3ee5bbb4.png": "/aiclub-gect-website/static/media/eve.3ee5bbb4.png",
-    "static/media/eve_square.2dc023bd.svg": "/aiclub-gect-website/static/media/eve_square.2dc023bd.svg",
-    "static/media/eve_triangle.5e70d062.svg": "/aiclub-gect-website/static/media/eve_triangle.5e70d062.svg",
-    "static/media/temp.084f4cf5.png": "/aiclub-gect-website/static/media/temp.084f4cf5.png"
+    "main.css": "/static/css/main.f6f7a40f.chunk.css",
+    "main.js": "/static/js/main.a418750e.chunk.js",
+    "main.js.map": "/static/js/main.a418750e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.250f7462.js",
+    "runtime-main.js.map": "/static/js/runtime-main.250f7462.js.map",
+    "static/js/2.c4e3c1d9.chunk.js": "/static/js/2.c4e3c1d9.chunk.js",
+    "static/js/2.c4e3c1d9.chunk.js.map": "/static/js/2.c4e3c1d9.chunk.js.map",
+    "static/js/3.931efe74.chunk.js": "/static/js/3.931efe74.chunk.js",
+    "static/js/3.931efe74.chunk.js.map": "/static/js/3.931efe74.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f6f7a40f.chunk.css.map": "/static/css/main.f6f7a40f.chunk.css.map",
+    "static/js/2.c4e3c1d9.chunk.js.LICENSE.txt": "/static/js/2.c4e3c1d9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Poppins-ExtraBold.4ed78cd5.ttf",
+    "static/media/arch.d8a4e71b.png": "/static/media/arch.d8a4e71b.png",
+    "static/media/background.4bf98716.png": "/static/media/background.4bf98716.png",
+    "static/media/eve.3ee5bbb4.png": "/static/media/eve.3ee5bbb4.png",
+    "static/media/eve_square.2dc023bd.svg": "/static/media/eve_square.2dc023bd.svg",
+    "static/media/eve_triangle.5e70d062.svg": "/static/media/eve_triangle.5e70d062.svg",
+    "static/media/temp.084f4cf5.png": "/static/media/temp.084f4cf5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.42c15f3f.js",
+    "static/js/runtime-main.250f7462.js",
     "static/js/2.c4e3c1d9.chunk.js",
-    "static/css/main.534866ba.chunk.css",
-    "static/js/main.91d03ea4.chunk.js"
+    "static/css/main.f6f7a40f.chunk.css",
+    "static/js/main.a418750e.chunk.js"
   ]
 }
