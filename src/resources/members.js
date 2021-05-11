@@ -60,7 +60,8 @@ const members = [
     group: "Nucleus",
     email: "ajaycravindran@gmail.com",
     linkedIn: "https://www.linkedin.com/in/ajay-r-376673132/",
-    description: "",
+    description:
+      "AI is an interdisciplinary science and its advancement is creating a paradigm shift in virtually every sector of the tech industry.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -86,7 +87,8 @@ const members = [
     group: "Node",
     email: "abhayvashokan@gmail.com",
     linkedIn: "https://www.linkedin.com/in/abhayvashokan/",
-    description: "A cool description coming soon...",
+    description:
+      "What's that thing sitting next to us? It appears to be some sort of primitive non-artificial un-intelligence!",
     picture: {
       original: TempImage,
       cartoon: TempImage,
