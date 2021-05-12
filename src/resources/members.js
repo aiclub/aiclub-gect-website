@@ -109,12 +109,13 @@ const members = [
     },
   },
   {
-    name: "Sheikh",
+    name: "Shaik Moideen M A",
     position: "Design & Media",
     group: "Dendrites",
-    email: "",
-    linkedIn: "",
-    description: "",
+    email: "shaikmoideen630@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/shaik-moideen-m-a-803b24211",
+    description:
+      "Artificial intelligence is a technology that can improve the world for the better. The world seems exciting and intriguing with Artificial Intelligence.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
