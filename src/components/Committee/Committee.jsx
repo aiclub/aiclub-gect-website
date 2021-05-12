@@ -9,7 +9,7 @@ import MemberBackground from "./MemberBackground/MemberBackground";
 import Background from "../../assets/images/committee/background.png";
 
 // Overriding @material ui themes.
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   committeeContainer: {
     width: "100vw",
     height: "100vh",
@@ -39,8 +39,12 @@ const useStyles = makeStyles({
     bottom: 0,
     margin: 30,
     zIndex: 50,
+
+    // [theme.breakpoints.down("sm")]: {
+    //   margin: 5,
+    // }
   },
-});
+}));
 
 const Committee = ({ small }) => {
   // Get the current member being hovered.

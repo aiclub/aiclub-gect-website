@@ -8,11 +8,12 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(16),
     height: theme.spacing(16),
     margin: 10,
+    boxShadow: theme.shadows[5],
 
     [theme.breakpoints.down("sm")]: {
       width: "70px",
       height: "70px",
-      transform: "rotate(90deg)",
+      margin: 5,
 
       ":&hover": {
         width: "80px",
