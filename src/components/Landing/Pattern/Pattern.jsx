@@ -1,73 +1,111 @@
+import React, { Component } from "react";
 import Particles from "react-particles-js";
 
-const Pattern = () => {
-  return (
-    <Particles
-      params={{
-        fps_limit: 28,
-        particles: {
-          collisions: {
-            enable: false,
-          },
-          number: {
-            value: 200,
-            density: {
-              enable: false,
+class Pattern extends Component {
+  state = { width: "0px", height: "0px" };
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+  updateWindowDimensions = () => {
+    this.setState({
+      width: `${window.innerWidth}px`,
+      height: `${window.innerHeight}px`
+    });
+  };
+  render() {
+    const { width, height } = this.state;
+    console.log(width, height);
+    return (
+      <Particles
+        {...this.state}
+        params={{
+          particles: {
+            number: {
+              value: 90,
+              density: {
+                enable: true,
+                value_area: 800
+              }
             },
-          },
-          line_linked: {
-            enable: true,
-            distance: 30,
-            opacity: 0.4,
-          },
-          move: {
-            speed: 1,
-          },
-          opacity: {
-            anim: {
+            color: {
+              value: "#ffffff"
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000"
+              },
+              
+            },
+            opacity: {
+              value: 0.4,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 2,
+                size_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable_auto: true,
+              distance: 100,
+              color: "#fff",
+              opacity: 1,
+              width: 1,
+              condensed_mode: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 600
+              }
+            },
+            move: {
               enable: true,
-              opacity_min: 0.05,
               speed: 1,
-              sync: false,
-            },
-            value: 0.4,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200
+              }
+            }
           },
-        },
-        polygon: {
-          enable: true,
-          scale: 0.5,
-          type: "inline",
-          move: {
-            radius: 10,
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: false
+              },
+              onclick: {
+                enable: false
+              },
+              resize: true
+            }
           },
-          inline: {
-            arrangement: "equidistant",
-          },
-          draw: {
-            enable: true,
-            stroke: {
-              color: "rgba(255, 255, 255, .2)",
-            },
-          },
-        },
-        retina_detect: false,
-        interactivity: {
-          events: {
-            onhover: {
-              enable: true,
-              mode: "bubble",
-            },
-          },
-          modes: {
-            bubble: {
-              size: 6,
-              distance: 40,
-            },
-          },
-        },
-      }}
-    />
-  );
-};
+          retina_detect: true
+        }}
+      />
+    );
+  }
+}
 
 export default Pattern;
