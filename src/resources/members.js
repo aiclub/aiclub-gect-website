@@ -2,6 +2,9 @@ import TempImage from "../assets/images/committee/members/temp.png";
 import Nakshathra from "../assets/images/committee/members/Nakshathra.jpeg";
 import Neha from "../assets/images/committee/members/Neha.jpeg";
 import Shuaib from "../assets/images/committee/members/Shuaib.jpeg";
+import Navaneeth from "../assets/images/committee/members/Navaneeth.jpg";
+import Saneef from "../assets/images/committee/members/saneef.jpg";
+import Aashik from "../assets/images/committee/members/ashik.jpg";
 
 const members = [
   {
@@ -26,9 +29,9 @@ const members = [
     description:
       "Robotics and AI are the future. Applying AI techniques like Computer Vision ,Motion planning and control etc are revolutionary. Colabarative robotics(Co-bots) and self-driving cars are great examples for the application of these technologies.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Aashik,
+      cartoon: Aashik,
+      white: Aashik,
     },
   },
   {
@@ -133,9 +136,9 @@ const members = [
     linkedIn: "",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Saneef,
+      cartoon: Saneef,
+      white: Saneef,
     },
   },
   {
@@ -172,9 +175,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/navaneeth-dinesh-216a45175/",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Navaneeth,
+      cartoon: Navaneeth,
+      white: Navaneeth,
     },
   },
   {
