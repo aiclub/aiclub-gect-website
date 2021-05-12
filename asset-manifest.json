@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aiclub-gect-website/static/css/main.534866ba.chunk.css",
-    "main.js": "/aiclub-gect-website/static/js/main.03319251.chunk.js",
-    "main.js.map": "/aiclub-gect-website/static/js/main.03319251.chunk.js.map",
+    "main.js": "/aiclub-gect-website/static/js/main.4b94408e.chunk.js",
+    "main.js.map": "/aiclub-gect-website/static/js/main.4b94408e.chunk.js.map",
     "runtime-main.js": "/aiclub-gect-website/static/js/runtime-main.d85f551a.js",
     "runtime-main.js.map": "/aiclub-gect-website/static/js/runtime-main.d85f551a.js.map",
     "static/js/2.fc7c8c72.chunk.js": "/aiclub-gect-website/static/js/2.fc7c8c72.chunk.js",
@@ -14,19 +14,22 @@
     "static/js/2.fc7c8c72.chunk.js.LICENSE.txt": "/aiclub-gect-website/static/js/2.fc7c8c72.chunk.js.LICENSE.txt",
     "static/media/index.css": "/aiclub-gect-website/static/media/Poppins-ExtraBold.4ed78cd5.ttf",
     "static/media/Nakshathra.d3977e65.jpeg": "/aiclub-gect-website/static/media/Nakshathra.d3977e65.jpeg",
+    "static/media/Navaneeth.3e978a38.jpg": "/aiclub-gect-website/static/media/Navaneeth.3e978a38.jpg",
     "static/media/Neha.d3f7c8a3.jpeg": "/aiclub-gect-website/static/media/Neha.d3f7c8a3.jpeg",
     "static/media/Shuaib.37b797c0.jpeg": "/aiclub-gect-website/static/media/Shuaib.37b797c0.jpeg",
     "static/media/arch.d8a4e71b.png": "/aiclub-gect-website/static/media/arch.d8a4e71b.png",
+    "static/media/ashik.7b6a50ef.jpg": "/aiclub-gect-website/static/media/ashik.7b6a50ef.jpg",
     "static/media/background.4bf98716.png": "/aiclub-gect-website/static/media/background.4bf98716.png",
     "static/media/eve.3ee5bbb4.png": "/aiclub-gect-website/static/media/eve.3ee5bbb4.png",
     "static/media/eve_square.2dc023bd.svg": "/aiclub-gect-website/static/media/eve_square.2dc023bd.svg",
     "static/media/eve_triangle.5e70d062.svg": "/aiclub-gect-website/static/media/eve_triangle.5e70d062.svg",
+    "static/media/saneef.08e3bbd1.jpg": "/aiclub-gect-website/static/media/saneef.08e3bbd1.jpg",
     "static/media/temp.084f4cf5.png": "/aiclub-gect-website/static/media/temp.084f4cf5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d85f551a.js",
     "static/js/2.fc7c8c72.chunk.js",
     "static/css/main.534866ba.chunk.css",
-    "static/js/main.03319251.chunk.js"
+    "static/js/main.4b94408e.chunk.js"
   ]
 }
