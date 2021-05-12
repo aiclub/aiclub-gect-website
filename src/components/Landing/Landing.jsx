@@ -2,15 +2,16 @@ import { useState } from "react";
 import Dialog from "@material-ui/core/Dialog";
 import { makeStyles } from "@material-ui/core/styles";
 
+import Pattern from "./Pattern/Pattern";
+import TitleBlock from "./TitleBlock/TitleBlock";
 import RegisterForm from "./RegisterForm/RegisterForm";
 import AnimatedEve from "./AnimatedEve/AnimatedEve";
-import TitleBlock from "./TitleBlock/TitleBlock";
-import Pattern from "./Pattern/Pattern";
 
 const useStyles = makeStyles({
   landingContainer: {
     position: "relative",
     height: "100vh",
+    backgroundColor: "black",
   },
 
   registerForm: {
