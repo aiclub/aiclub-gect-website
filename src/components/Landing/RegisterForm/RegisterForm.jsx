@@ -159,7 +159,6 @@ const RegisterForm = () => {
 
     setStates({
       ...states,
-      registerError: false,
       open: false
     });
   };
@@ -209,16 +208,22 @@ const RegisterForm = () => {
           setStates({
             ...states,
             check: false,
-            open: true
+            open: true,
+            registerError: false
           })
         })
         .catch((error) => {
-          if (error.response.data.code === "USEREXISTS") {
-            setStates({
-              ...states,
-              open: true,
-              registerError: true
-            })
+          if (error.response) {
+            if(error.response.data.code === "USEREXISTS") {
+              setStates({
+                ...states,
+                open: true,
+                registerError: true
+              })
+            }
+            else {
+              console.log(error.response)
+            }
           }
         })
       event.preventDefault();

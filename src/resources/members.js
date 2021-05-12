@@ -1,4 +1,7 @@
 import TempImage from "../assets/images/committee/members/temp.png";
+import Nakshathra from "../assets/images/committee/members/Nakshathra.jpeg";
+import Neha from "../assets/images/committee/members/Neha.jpeg";
+import Shuaib from "../assets/images/committee/members/Shuaib.jpeg";
 
 const members = [
   {
@@ -45,9 +48,9 @@ const members = [
     name: "Anagha",
     position: "Joint Convenor",
     group: "Nucleus",
-    email: "",
-    linkedIn: "",
-    description: "",
+    email: "anaghasureshbabu24@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/anagha-suresh-913416171",
+    description: "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -182,9 +185,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/shuaib-abubakker-bapputty-haji",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Shuaib,
+      cartoon: Shuaib,
+      white: Shuaib,
     },
   },
   {
@@ -195,9 +198,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/nakshathra-nazer-3b95ba1a4",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Nakshathra,
+      cartoon: Nakshathra,
+      white: Nakshathra,
     },
   },
   {
@@ -209,9 +212,9 @@ const members = [
     description:
       "People have been using AI techniques to reap benefits in a gamut of applications. There is still a lot more untrodden paths to be discovered. So, it's future is bright.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Neha,
+      cartoon: Neha,
+      white: Neha,
     },
   },
   {
