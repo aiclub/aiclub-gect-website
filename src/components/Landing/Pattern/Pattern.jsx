@@ -1,43 +1,73 @@
-import React from 'react';
-import { withStyles } from "@material-ui/core/styles";
+import Particles from "react-particles-js";
 
-const useStyles = (theme) => ({
-	test: {
-		height: "100vh",
-		width: "100%",
-		zIndex: '-1',
-		background: "black",
-	}
-})
+const Pattern = () => {
+  return (
+    <Particles
+      params={{
+        fps_limit: 28,
+        particles: {
+          collisions: {
+            enable: false,
+          },
+          number: {
+            value: 200,
+            density: {
+              enable: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 30,
+            opacity: 0.4,
+          },
+          move: {
+            speed: 1,
+          },
+          opacity: {
+            anim: {
+              enable: true,
+              opacity_min: 0.05,
+              speed: 1,
+              sync: false,
+            },
+            value: 0.4,
+          },
+        },
+        polygon: {
+          enable: true,
+          scale: 0.5,
+          type: "inline",
+          move: {
+            radius: 10,
+          },
+          inline: {
+            arrangement: "equidistant",
+          },
+          draw: {
+            enable: true,
+            stroke: {
+              color: "rgba(255, 255, 255, .2)",
+            },
+          },
+        },
+        retina_detect: false,
+        interactivity: {
+          events: {
+            onhover: {
+              enable: true,
+              mode: "bubble",
+            },
+          },
+          modes: {
+            bubble: {
+              size: 6,
+              distance: 40,
+            },
+          },
+        },
+      }}
+    />
+  );
+};
 
-class Pattern extends React.Component {
-	componentDidMount() {
-	  // Loading resources for home page animation.
-	  let script = document.createElement("script");
-	  script.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js";
-	  document.body.appendChild(script);
-  
-	  script = document.createElement("script");
-	  script.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js";
-	  document.body.appendChild(script);
-  
-	  script = document.createElement("script");
-	//   script.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js";
-	  script.src = process.env.PUBLIC_URL + 'pattern.js';
-	  document.body.appendChild(script);
-	}
-
-	render() {
-		const { classes } = this.props;
-		return(
-			<div className={classes.test}>
-				<div id="large-header">
-					<canvas id="demo-canvas">
-					</canvas>
-				</div>
-			</div>
-		)
-	}
-}
-
-export default withStyles(useStyles)(Pattern);
+export default Pattern;
