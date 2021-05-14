@@ -13,10 +13,10 @@ const useStyles = makeStyles({
     height: "100vh",
   },
   odd: {
-    opacity: "15%",
+    opacity: "19%",
   },
   even: {
-    opacity: "6%",
+    opacity: "9%",
   },
   backgroundText: {
     fontSize: 50,

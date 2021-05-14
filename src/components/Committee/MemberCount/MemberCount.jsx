@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     fontSize: 30,
-    color: "#26214F",
+    color: "#FFFFFF",
     opacity: "50%",
     marginBottom: 20,
 

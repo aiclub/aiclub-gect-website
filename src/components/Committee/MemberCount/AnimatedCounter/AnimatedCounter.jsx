@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // Overriding @material ui styles
 const useStyles = makeStyles(theme => ({
   count: {
-    color: "#0E233E",
+    color: "#FFFFFF",
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 75,

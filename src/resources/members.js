@@ -5,6 +5,17 @@ import Shuaib from "../assets/images/committee/members/Shuaib.jpeg";
 import Navaneeth from "../assets/images/committee/members/Navaneeth.jpg";
 import Saneef from "../assets/images/committee/members/saneef.jpg";
 import Aashik from "../assets/images/committee/members/ashik.jpg";
+import Abhay from "../assets/images/committee/members/abhay.jpg";
+import Ajay from "../assets/images/committee/members/ajay.jpg";
+import Sheikh from "../assets/images/committee/members/sheikh.jpg";
+import Abhay2 from "../assets/images/committee/members/abhay.png";
+import Ajay2 from "../assets/images/committee/members/ajay.png";
+import Nakshathra2 from "../assets/images/committee/members/Nakshathra.png";
+import Navaneeth2 from "../assets/images/committee/members/Navaneeth.png";
+import Neha2 from "../assets/images/committee/members/neha.png";
+import Shuaib2 from "../assets/images/committee/members/shuaib.png";
+import Sheikh2 from "../assets/images/committee/members/sheikh.png";
+import Saneef2 from "../assets/images/committee/members/saneef.png";
 
 const members = [
   {
@@ -69,9 +80,9 @@ const members = [
     description:
       "AI is an interdisciplinary science and its advancement is creating a paradigm shift in virtually every sector of the tech industry.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Ajay,
+      cartoon: Ajay,
+      white: Ajay2,
     },
   },
   {
@@ -96,9 +107,9 @@ const members = [
     description:
       "What's that thing sitting next to us? It appears to be some sort of primitive non-artificial un-intelligence!",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Abhay,
+      cartoon: Abhay,
+      white: Abhay2,
     },
   },
   {
@@ -123,9 +134,9 @@ const members = [
     description:
       "Artificial intelligence is a technology that can improve the world for the better. The world seems exciting and intriguing with Artificial Intelligence.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Sheikh,
+      cartoon: Sheikh,
+      white: Sheikh2,
     },
   },
   {
@@ -134,11 +145,11 @@ const members = [
     group: "Dendrites",
     email: "",
     linkedIn: "",
-    description: "",
+    description: "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
     picture: {
       original: Saneef,
       cartoon: Saneef,
-      white: Saneef,
+      white: Saneef2,
     },
   },
   {
@@ -171,13 +182,13 @@ const members = [
     name: "Navaneeth Dinesh",
     position: "Execom",
     group: "Axon",
-    email: "",
+    email: "navaneethsdk@gmail.com",
     linkedIn: "https://www.linkedin.com/in/navaneeth-dinesh-216a45175/",
     description: "",
     picture: {
       original: Navaneeth,
       cartoon: Navaneeth,
-      white: Navaneeth,
+      white: Navaneeth2,
     },
   },
   {
@@ -186,11 +197,11 @@ const members = [
     group: "Axon",
     email: "shuaibabh@gmail.com",
     linkedIn: "https://www.linkedin.com/in/shuaib-abubakker-bapputty-haji",
-    description: "",
+    description: "the question whether a machine can think is forbidden !",
     picture: {
       original: Shuaib,
       cartoon: Shuaib,
-      white: Shuaib,
+      white: Shuaib2,
     },
   },
   {
@@ -203,7 +214,7 @@ const members = [
     picture: {
       original: Nakshathra,
       cartoon: Nakshathra,
-      white: Nakshathra,
+      white: Nakshathra2,
     },
   },
   {
@@ -217,7 +228,7 @@ const members = [
     picture: {
       original: Neha,
       cartoon: Neha,
-      white: Neha,
+      white: Neha2,
     },
   },
   {

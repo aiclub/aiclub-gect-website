@@ -7,7 +7,7 @@ import MembersPage from "./components/Committee/Members/MembersPage";
 
 const useStyles = makeStyles({
   root: {
-    background: "#F6F6F6",
+    background: "#000000",
   },
 });
 

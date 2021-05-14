@@ -37,7 +37,7 @@ const Slider = ({ isShown, setIsShown }) => {
           ></Profile>
         )}
       </div>
-      <Marquee speed="70" pauseOnHover="true">
+      <Marquee speed="70" pauseOnHover="true" gradientColor={[0, 0, 0]}>
         {members.map((member, index) => (
           <div key={member} className={classes.marginProvider}>
             <MemberAvatar setSelect={setIsShown} index={index} />

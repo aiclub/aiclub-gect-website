@@ -9,7 +9,7 @@ import NameBackground from "./NameBackground/NameBackground";
 const useStyles = makeStyles(theme => ({
   memberContainer: {
     height: "100vh",
-    background: "#F6F6F6",
+    background: "#000000",
   },
   image: {
     position: "absolute",
@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     zIndex: 10,
     left: "50%",
     height: "80%",
-    opacity: "50%",
+    opacity: "65%",
     transform: "translateX(-50%)",
 
     [theme.breakpoints.down("sm")]: {

@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme)=>({
         boxSizing: "border-box",
         borderRadius: "20px",
         
+        
         [theme.breakpoints.down("sm")]:{
             width: "82px",
             height: "82px",

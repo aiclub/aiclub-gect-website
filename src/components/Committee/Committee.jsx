@@ -6,7 +6,8 @@ import Slider from "./Members/SlidingProfile";
 import MemberCount from "./MemberCount/MemberCount";
 import BackToTopButton from "./BackToTopButton/BackToTopButton";
 import MemberBackground from "./MemberBackground/MemberBackground";
-import Background from "../../assets/images/committee/background.png";
+// import Background from "../../assets/images/committee/background.png";
+import Background2 from "../../assets/images/committee/Background.png";
 
 // Overriding @material ui themes.
 const useStyles = makeStyles((theme) => ({
@@ -17,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    background: `url(${Background})`,
+    background: `url(${Background2})`,
   },
   memberCountContainer: {
     position: "absolute",
