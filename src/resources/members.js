@@ -8,6 +8,8 @@ import Aashik from "../assets/images/committee/members/ashik.jpg";
 import Abhay from "../assets/images/committee/members/abhay.jpg";
 import Ajay from "../assets/images/committee/members/ajay.jpg";
 import Sheikh from "../assets/images/committee/members/sheikh.jpg";
+import Adhil from "../assets/images/committee/members/adil.jpg";
+import Adhil2 from "../assets/images/committee/members/Adhil.png";
 import Abhay2 from "../assets/images/committee/members/abhay.png";
 import Ajay2 from "../assets/images/committee/members/ajay.png";
 import Nakshathra2 from "../assets/images/committee/members/Nakshathra.png";
@@ -160,9 +162,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/abduladhilpk",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Adhil,
+      cartoon: Adhil,
+      white: Adhil2,
     },
   },
   {
