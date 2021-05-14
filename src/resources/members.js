@@ -9,15 +9,15 @@ import Abhay from "../assets/images/committee/members/abhay.jpg";
 import Ajay from "../assets/images/committee/members/ajay.jpg";
 import Sheikh from "../assets/images/committee/members/sheikh.jpg";
 import Adhil from "../assets/images/committee/members/adil.jpg";
-import Adhil2 from "../assets/images/committee/members/Adhil.png";
+import Adhil2 from "../assets/images/committee/members/adil1.jpg";
 import Abhay2 from "../assets/images/committee/members/abhay.png";
 import Ajay2 from "../assets/images/committee/members/ajay.png";
-import Nakshathra2 from "../assets/images/committee/members/Nakshathra.png";
-import Navaneeth2 from "../assets/images/committee/members/Navaneeth.png";
+import Nakshathra2 from "../assets/images/committee/members/Nakshathra1.jpg";
+import Navaneeth2 from "../assets/images/committee/members/Navaneeth1.jpg";
 import Neha2 from "../assets/images/committee/members/neha.png";
 import Shuaib2 from "../assets/images/committee/members/shuaib.png";
-import Sheikh2 from "../assets/images/committee/members/sheikh.png";
-import Saneef2 from "../assets/images/committee/members/saneef.png";
+import Sheikh2 from "../assets/images/committee/members/sheikh1.jpg";
+import Saneef2 from "../assets/images/committee/members/saneef1.jpg";
 
 const members = [
   {
@@ -138,7 +138,7 @@ const members = [
     picture: {
       original: Sheikh,
       cartoon: Sheikh,
-      white: Sheikh,
+      white: Sheikh2,
     },
   },
   {
@@ -151,7 +151,7 @@ const members = [
     picture: {
       original: Saneef,
       cartoon: Saneef,
-      white: Saneef,
+      white: Saneef2,
     },
   },
   {
@@ -164,7 +164,7 @@ const members = [
     picture: {
       original: Adhil,
       cartoon: Adhil,
-      white: Adhil,
+      white: Adhil2,
     },
   },
   {
@@ -190,7 +190,7 @@ const members = [
     picture: {
       original: Navaneeth,
       cartoon: Navaneeth,
-      white: Navaneeth,
+      white: Navaneeth2,
     },
   },
   {
@@ -216,7 +216,7 @@ const members = [
     picture: {
       original: Nakshathra,
       cartoon: Nakshathra,
-      white: Nakshathra,
+      white: Nakshathra2,
     },
   },
   {
