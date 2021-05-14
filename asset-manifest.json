@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aiclub-gect-website/static/css/main.534866ba.chunk.css",
-    "main.js": "/aiclub-gect-website/static/js/main.eab1f70f.chunk.js",
-    "main.js.map": "/aiclub-gect-website/static/js/main.eab1f70f.chunk.js.map",
+    "main.js": "/aiclub-gect-website/static/js/main.36447ef9.chunk.js",
+    "main.js.map": "/aiclub-gect-website/static/js/main.36447ef9.chunk.js.map",
     "runtime-main.js": "/aiclub-gect-website/static/js/runtime-main.c441b5b8.js",
     "runtime-main.js.map": "/aiclub-gect-website/static/js/runtime-main.c441b5b8.js.map",
     "static/js/2.a90c14eb.chunk.js": "/aiclub-gect-website/static/js/2.a90c14eb.chunk.js",
@@ -13,23 +13,34 @@
     "static/css/main.534866ba.chunk.css.map": "/aiclub-gect-website/static/css/main.534866ba.chunk.css.map",
     "static/js/2.a90c14eb.chunk.js.LICENSE.txt": "/aiclub-gect-website/static/js/2.a90c14eb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/aiclub-gect-website/static/media/Poppins-ExtraBold.4ed78cd5.ttf",
+    "static/media/Background.7e9f0330.png": "/aiclub-gect-website/static/media/Background.7e9f0330.png",
+    "static/media/Nakshathra.3cd925ae.png": "/aiclub-gect-website/static/media/Nakshathra.3cd925ae.png",
     "static/media/Nakshathra.d3977e65.jpeg": "/aiclub-gect-website/static/media/Nakshathra.d3977e65.jpeg",
     "static/media/Navaneeth.3e978a38.jpg": "/aiclub-gect-website/static/media/Navaneeth.3e978a38.jpg",
+    "static/media/Navaneeth.d3d6f223.png": "/aiclub-gect-website/static/media/Navaneeth.d3d6f223.png",
     "static/media/Neha.d3f7c8a3.jpeg": "/aiclub-gect-website/static/media/Neha.d3f7c8a3.jpeg",
     "static/media/Shuaib.37b797c0.jpeg": "/aiclub-gect-website/static/media/Shuaib.37b797c0.jpeg",
+    "static/media/abhay.3a4b20ca.png": "/aiclub-gect-website/static/media/abhay.3a4b20ca.png",
+    "static/media/abhay.966c4405.jpg": "/aiclub-gect-website/static/media/abhay.966c4405.jpg",
+    "static/media/ajay.55f16563.png": "/aiclub-gect-website/static/media/ajay.55f16563.png",
+    "static/media/ajay.a590bcbb.jpg": "/aiclub-gect-website/static/media/ajay.a590bcbb.jpg",
     "static/media/arch.d8a4e71b.png": "/aiclub-gect-website/static/media/arch.d8a4e71b.png",
     "static/media/ashik.7b6a50ef.jpg": "/aiclub-gect-website/static/media/ashik.7b6a50ef.jpg",
-    "static/media/background.4bf98716.png": "/aiclub-gect-website/static/media/background.4bf98716.png",
     "static/media/eve.3ee5bbb4.png": "/aiclub-gect-website/static/media/eve.3ee5bbb4.png",
     "static/media/eve_square.2dc023bd.svg": "/aiclub-gect-website/static/media/eve_square.2dc023bd.svg",
     "static/media/eve_triangle.5e70d062.svg": "/aiclub-gect-website/static/media/eve_triangle.5e70d062.svg",
+    "static/media/neha.c6b62292.png": "/aiclub-gect-website/static/media/neha.c6b62292.png",
     "static/media/saneef.08e3bbd1.jpg": "/aiclub-gect-website/static/media/saneef.08e3bbd1.jpg",
+    "static/media/saneef.bcfd20dc.png": "/aiclub-gect-website/static/media/saneef.bcfd20dc.png",
+    "static/media/sheikh.044ae173.png": "/aiclub-gect-website/static/media/sheikh.044ae173.png",
+    "static/media/sheikh.75e9c3bb.jpg": "/aiclub-gect-website/static/media/sheikh.75e9c3bb.jpg",
+    "static/media/shuaib.f6a336bc.png": "/aiclub-gect-website/static/media/shuaib.f6a336bc.png",
     "static/media/temp.084f4cf5.png": "/aiclub-gect-website/static/media/temp.084f4cf5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c441b5b8.js",
     "static/js/2.a90c14eb.chunk.js",
     "static/css/main.534866ba.chunk.css",
-    "static/js/main.eab1f70f.chunk.js"
+    "static/js/main.36447ef9.chunk.js"
   ]
 }
