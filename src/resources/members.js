@@ -10,12 +10,12 @@ import Ajay from "../assets/images/committee/members/ajay.jpg";
 import Sheikh from "../assets/images/committee/members/sheikh.jpg";
 import Adhil from "../assets/images/committee/members/adil.jpg";
 import Adhil2 from "../assets/images/committee/members/adil1.jpg";
-import Abhay2 from "../assets/images/committee/members/abhay.png";
-import Ajay2 from "../assets/images/committee/members/ajay.png";
+import Abhay2 from "../assets/images/committee/members/abhay1.jpg";
+import Ajay2 from "../assets/images/committee/members/ajay1.jpg";
 import Nakshathra2 from "../assets/images/committee/members/Nakshathra1.jpg";
 import Navaneeth2 from "../assets/images/committee/members/Navaneeth1.jpg";
-import Neha2 from "../assets/images/committee/members/neha.png";
-import Shuaib2 from "../assets/images/committee/members/shuaib.png";
+import Neha2 from "../assets/images/committee/members/neha.jpg";
+import Shuaib2 from "../assets/images/committee/members/shuaib.jpg";
 import Sheikh2 from "../assets/images/committee/members/sheikh1.jpg";
 import Saneef2 from "../assets/images/committee/members/saneef1.jpg";
 
@@ -84,7 +84,7 @@ const members = [
     picture: {
       original: Ajay,
       cartoon: Ajay,
-      white: Ajay,
+      white: Ajay2,
     },
   },
   {
@@ -111,7 +111,7 @@ const members = [
     picture: {
       original: Abhay,
       cartoon: Abhay,
-      white: Abhay,
+      white: Abhay2,
     },
   },
   {
@@ -203,7 +203,7 @@ const members = [
     picture: {
       original: Shuaib,
       cartoon: Shuaib,
-      white: Shuaib,
+      white: Shuaib2,
     },
   },
   {
@@ -230,7 +230,7 @@ const members = [
     picture: {
       original: Neha,
       cartoon: Neha,
-      white: Neha,
+      white: Neha2,
     },
   },
   {
