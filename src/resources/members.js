@@ -84,7 +84,7 @@ const members = [
     picture: {
       original: Ajay,
       cartoon: Ajay,
-      white: Ajay2,
+      white: Ajay,
     },
   },
   {
@@ -111,7 +111,7 @@ const members = [
     picture: {
       original: Abhay,
       cartoon: Abhay,
-      white: Abhay2,
+      white: Abhay,
     },
   },
   {
@@ -138,7 +138,7 @@ const members = [
     picture: {
       original: Sheikh,
       cartoon: Sheikh,
-      white: Sheikh2,
+      white: Sheikh,
     },
   },
   {
@@ -151,7 +151,7 @@ const members = [
     picture: {
       original: Saneef,
       cartoon: Saneef,
-      white: Saneef2,
+      white: Saneef,
     },
   },
   {
@@ -164,7 +164,7 @@ const members = [
     picture: {
       original: Adhil,
       cartoon: Adhil,
-      white: Adhil2,
+      white: Adhil,
     },
   },
   {
@@ -190,7 +190,7 @@ const members = [
     picture: {
       original: Navaneeth,
       cartoon: Navaneeth,
-      white: Navaneeth2,
+      white: Navaneeth,
     },
   },
   {
@@ -203,7 +203,7 @@ const members = [
     picture: {
       original: Shuaib,
       cartoon: Shuaib,
-      white: Shuaib2,
+      white: Shuaib,
     },
   },
   {
@@ -216,7 +216,7 @@ const members = [
     picture: {
       original: Nakshathra,
       cartoon: Nakshathra,
-      white: Nakshathra2,
+      white: Nakshathra,
     },
   },
   {
@@ -230,7 +230,7 @@ const members = [
     picture: {
       original: Neha,
       cartoon: Neha,
-      white: Neha2,
+      white: Neha,
     },
   },
   {
