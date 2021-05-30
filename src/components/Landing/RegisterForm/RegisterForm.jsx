@@ -364,7 +364,7 @@ const RegisterForm = () => {
         <Snackbar 
           anchorOrigin={{vertical: "top", horizontal: "center"}} 
           open={states.gectcrRegex} 
-          autoHideDuration={1500} 
+          autoHideDuration={3000} 
           onClose={() => setStates({
             ...states,
             gectcrRegex: false
