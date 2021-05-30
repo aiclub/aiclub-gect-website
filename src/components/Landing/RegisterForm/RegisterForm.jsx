@@ -105,6 +105,8 @@ const useStyles = makeStyles((theme) => ({
 const RegisterForm = () => {
   const classes = useStyles();
 
+  const gectcrRegex = /^[a-z0-9](\.?[a-z0-9]){5,}@gectcr\.ac\.in$/;
+
   const [data, setData] = React.useState({
     first: "",
     last: "",
@@ -121,7 +123,8 @@ const RegisterForm = () => {
     open: false,
     openPass: false,
     registerError: false,
-    isLoading: false
+    isLoading: false,
+    gectcrRegex: false,
   });
 
   const handleChange = (event) => {
@@ -183,6 +186,13 @@ const RegisterForm = () => {
       })
       event.preventDefault();
     } 
+    else if (!gectcrRegex.test(String(data.email).toLowerCase())) {
+      setStates({
+        ...states,
+        gectcrRegex: true
+      })
+      event.preventDefault();
+    }
     else {
       console.log(data);
       setStates({
@@ -350,6 +360,20 @@ const RegisterForm = () => {
               User registered
             </Alert>
           )}
+        </Snackbar>
+        <Snackbar 
+          anchorOrigin={{vertical: "top", horizontal: "center"}} 
+          open={states.gectcrRegex} 
+          autoHideDuration={1500} 
+          onClose={() => setStates({
+            ...states,
+            gectcrRegex: false
+          })}>
+          {
+            <Alert variant="filled" severity="error" onClose={handleClose}>
+              Sorry buddy! Please try again with your gectcr email id!
+            </Alert>
+           }
         </Snackbar>
       </form>
     </div>
