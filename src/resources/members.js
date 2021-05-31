@@ -34,6 +34,19 @@ const members = [
     },
   },
   {
+    name: "Aadil K P",
+    position: "Secretary",
+    group: "Nucleus",
+    email: "abduladhilpk@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
+    description: "",
+    picture: {
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
+    },
+  },
+  {
     name: "Aashik M S",
     position: "Convenor",
     group: "Nucleus",
@@ -48,25 +61,13 @@ const members = [
     },
   },
   {
-    name: "Aadil K P",
-    position: "Secretary",
-    group: "Nucleus",
-    email: "",
-    linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
-    description: "",
-    picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
-    },
-  },
-  {
-    name: "Anagha",
+    name: "Anagha Suresh",
     position: "Joint Convenor",
     group: "Nucleus",
     email: "anaghasureshbabu24@gmail.com",
     linkedIn: "https://www.linkedin.com/in/anagha-suresh-913416171",
-    description: "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
+    description:
+      "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -93,7 +94,8 @@ const members = [
     group: "Nucleus",
     email: "favaztp696@gmail.com",
     linkedIn: "https://www.linkedin.com/in/muhammed-favaz-t-p-48849a164",
-    description: "",
+    description:
+      "Democratize AI. Create an AI ecosystem which is acessible for all.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -120,7 +122,8 @@ const members = [
     group: "Node",
     email: "calvinwilson2017@gmail.com",
     linkedIn: "https://www.linkedin.com/in/calvin-wilson-254002186/",
-    description: "",
+    description:
+      "AI is likely to be either the best or worst thing to happen to humanity.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -145,9 +148,10 @@ const members = [
     name: "Saneef",
     position: "Design & Media",
     group: "Dendrites",
-    email: "",
+    email: "ttsaneef99@gmail.com",
     linkedIn: "",
-    description: "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
+    description:
+      "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
     picture: {
       original: Saneef,
       cartoon: Saneef,
@@ -234,7 +238,7 @@ const members = [
     },
   },
   {
-    name: "Niranjan Neelakantan",
+    name: "Niranjan",
     position: "Execom",
     group: "Axon",
     email: "niranjan2neelakantan@gmail.com",
