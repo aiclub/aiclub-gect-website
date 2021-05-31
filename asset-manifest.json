@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/aiclub-gect-website/static/css/main.c4e86fa2.chunk.css",
-    "main.js": "/aiclub-gect-website/static/js/main.2f0d73f2.chunk.js",
-    "main.js.map": "/aiclub-gect-website/static/js/main.2f0d73f2.chunk.js.map",
+    "main.css": "/aiclub-gect-website/static/css/main.bbbd76b9.chunk.css",
+    "main.js": "/aiclub-gect-website/static/js/main.03b5b095.chunk.js",
+    "main.js.map": "/aiclub-gect-website/static/js/main.03b5b095.chunk.js.map",
     "runtime-main.js": "/aiclub-gect-website/static/js/runtime-main.e505ad98.js",
     "runtime-main.js.map": "/aiclub-gect-website/static/js/runtime-main.e505ad98.js.map",
     "static/js/2.40149987.chunk.js": "/aiclub-gect-website/static/js/2.40149987.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.a426ab86.chunk.js": "/aiclub-gect-website/static/js/3.a426ab86.chunk.js",
     "static/js/3.a426ab86.chunk.js.map": "/aiclub-gect-website/static/js/3.a426ab86.chunk.js.map",
     "index.html": "/aiclub-gect-website/index.html",
-    "static/css/main.c4e86fa2.chunk.css.map": "/aiclub-gect-website/static/css/main.c4e86fa2.chunk.css.map",
+    "static/css/main.bbbd76b9.chunk.css.map": "/aiclub-gect-website/static/css/main.bbbd76b9.chunk.css.map",
     "static/js/2.40149987.chunk.js.LICENSE.txt": "/aiclub-gect-website/static/js/2.40149987.chunk.js.LICENSE.txt",
     "static/media/index.css": "/aiclub-gect-website/static/media/Poppins-ExtraBold.4ed78cd5.ttf",
     "static/media/Background.7e9f0330.png": "/aiclub-gect-website/static/media/Background.7e9f0330.png",
@@ -28,6 +28,7 @@
     "static/media/ajay1.9a00ec86.jpg": "/aiclub-gect-website/static/media/ajay1.9a00ec86.jpg",
     "static/media/arch.d8a4e71b.png": "/aiclub-gect-website/static/media/arch.d8a4e71b.png",
     "static/media/ashik.7b6a50ef.jpg": "/aiclub-gect-website/static/media/ashik.7b6a50ef.jpg",
+    "static/media/ashik1.f0ced431.jpg": "/aiclub-gect-website/static/media/ashik1.f0ced431.jpg",
     "static/media/eve.3ee5bbb4.png": "/aiclub-gect-website/static/media/eve.3ee5bbb4.png",
     "static/media/eve_square.2dc023bd.svg": "/aiclub-gect-website/static/media/eve_square.2dc023bd.svg",
     "static/media/eve_triangle.5e70d062.svg": "/aiclub-gect-website/static/media/eve_triangle.5e70d062.svg",
@@ -42,7 +43,7 @@
   "entrypoints": [
     "static/js/runtime-main.e505ad98.js",
     "static/js/2.40149987.chunk.js",
-    "static/css/main.c4e86fa2.chunk.css",
-    "static/js/main.2f0d73f2.chunk.js"
+    "static/css/main.bbbd76b9.chunk.css",
+    "static/js/main.03b5b095.chunk.js"
   ]
 }
