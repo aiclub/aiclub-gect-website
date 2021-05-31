@@ -9,6 +9,13 @@ import Abhay from "../assets/images/committee/members/abhay.jpg";
 import Ajay from "../assets/images/committee/members/ajay.jpg";
 import Sheikh from "../assets/images/committee/members/sheikh.jpg";
 import Adhil from "../assets/images/committee/members/adil.jpg";
+import Calvin from "../assets/images/committee/members/Calvin_1.jpg";
+import Favaz from "../assets/images/committee/members/favaz1.jpg";
+import Anagha from "../assets/images/committee/members/anag.jpg";
+import Niranjan from "../assets/images/committee/members/Niranjan_1.jpg";
+import AdhilKP from "../assets/images/committee/members/adhil-kp.jpg";
+import Allwyn from "../assets/images/committee/members/allwyn.jpg";
+
 import Adhil2 from "../assets/images/committee/members/adil1.jpg";
 import Abhay2 from "../assets/images/committee/members/abhay1.jpg";
 import Ajay2 from "../assets/images/committee/members/ajay1.jpg";
@@ -18,7 +25,15 @@ import Neha2 from "../assets/images/committee/members/neha.jpg";
 import Shuaib2 from "../assets/images/committee/members/shuaib.jpg";
 import Sheikh2 from "../assets/images/committee/members/sheikh1.jpg";
 import Saneef2 from "../assets/images/committee/members/saneef1.jpg";
-import Aashik2 from "../assets/images/committee/members/ashik1.jpg";
+import Calvin2 from "../assets/images/committee/members/Calvin.jpg";
+import Favaz2 from "../assets/images/committee/members/favaz.jpg";
+import Anagha2 from "../assets/images/committee/members/anagha.jpg";
+import Niranjan2 from "../assets/images/committee/members/Niranjan.jpg";
+import AdhilKP1 from "../assets/images/committee/members/adhil-kp1.jpg";
+import Allwyn1 from "../assets/images/committee/members/Allwyn.jpg";
+import Aashik1 from "../assets/images/committee/members/ashik1.jpg";
+
+
 
 const members = [
   {
@@ -42,9 +57,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: AdhilKP,
+      cartoon: AdhilKP,
+      white: AdhilKP1,
     },
   },
   {
@@ -58,21 +73,21 @@ const members = [
     picture: {
       original: Aashik,
       cartoon: Aashik,
-      white: Aashik2,
+      white: Aashik1,
     },
   },
+ 
   {
-    name: "Anagha Suresh",
+    name: "Anagha",
     position: "Joint Convenor",
     group: "Nucleus",
     email: "anaghasureshbabu24@gmail.com",
     linkedIn: "https://www.linkedin.com/in/anagha-suresh-913416171",
-    description:
-      "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
+    description: "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Anagha,
+      cartoon: Anagha,
+      white: Anagha2,
     },
   },
   {
@@ -95,12 +110,11 @@ const members = [
     group: "Nucleus",
     email: "favaztp696@gmail.com",
     linkedIn: "https://www.linkedin.com/in/muhammed-favaz-t-p-48849a164",
-    description:
-      "Democratize AI. Create an AI ecosystem which is acessible for all.",
+    description: "Democratize AI. Create an AI ecosystem which is acessible for all.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Favaz,
+      cartoon: Favaz,
+      white: Favaz2,
     },
   },
   {
@@ -123,12 +137,11 @@ const members = [
     group: "Node",
     email: "calvinwilson2017@gmail.com",
     linkedIn: "https://www.linkedin.com/in/calvin-wilson-254002186/",
-    description:
-      "AI is likely to be either the best or worst thing to happen to humanity.",
+    description: "AI is likely to be either the best or worst thing to happen to humanity.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Calvin,
+      cartoon: Calvin,
+      white: Calvin2,
     },
   },
   {
@@ -151,8 +164,7 @@ const members = [
     group: "Dendrites",
     email: "ttsaneef99@gmail.com",
     linkedIn: "https://www.linkedin.com/in/saneef-tt-008915151/",
-    description:
-      "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
+    description: "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
     picture: {
       original: Saneef,
       cartoon: Saneef,
@@ -178,11 +190,11 @@ const members = [
     group: "Axon",
     email: "",
     linkedIn: "https://www.linkedin.com/in/allwynsunil/",
-    description: "",
+    description: "Deeplearning is glorified linear algebra and calculus",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Allwyn,
+      cartoon: Allwyn,
+      white: Allwyn1,
     },
   },
   {
@@ -191,7 +203,7 @@ const members = [
     group: "Axon",
     email: "navaneethsdk@gmail.com",
     linkedIn: "https://www.linkedin.com/in/navaneeth-dinesh-216a45175/",
-    description: "",
+    description: "Aren't we all conscious mortal machines made of organic material. Time to change the material!",
     picture: {
       original: Navaneeth,
       cartoon: Navaneeth,
@@ -239,7 +251,7 @@ const members = [
     },
   },
   {
-    name: "Niranjan",
+    name: "Niranjan Neelakantan",
     position: "Execom",
     group: "Axon",
     email: "niranjan2neelakantan@gmail.com",
@@ -247,9 +259,9 @@ const members = [
     description:
       "We're making this analogy that AI is the new electricity. Electricity transformed industries: agriculture, transportation, communication, manufacturing",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Niranjan,
+      cartoon: Niranjan,
+      white: Niranjan2,
     },
   },
 ];
