@@ -165,7 +165,7 @@ const members = [
     group: "Axon",
     email: "abduladhilpk@gmail.com",
     linkedIn: "https://www.linkedin.com/in/abduladhilpk",
-    description: "",
+    description: "AI and its offshoot will be a foundational tool for creating social good.",
     picture: {
       original: Adhil,
       cartoon: Adhil,
