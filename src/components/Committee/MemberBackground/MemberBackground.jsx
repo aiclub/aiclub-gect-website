@@ -29,7 +29,6 @@ const useStyles = makeStyles(theme => ({
 
 const MemberBackground = ({ memberIndex }) => {
   const classes = useStyles();
-  console.log(memberIndex)
 
   return (
     <div className={classes.memberContainer}>

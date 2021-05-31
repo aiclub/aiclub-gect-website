@@ -36,7 +36,7 @@ const theme = createMuiTheme({
     // Team member card title, Pre-register button in committee
     subtitle2: {
       fontFamily: "Lato",
-      fontWeight: 800,
+      fontWeight: 700,
       fontSize: 25,
     },
 

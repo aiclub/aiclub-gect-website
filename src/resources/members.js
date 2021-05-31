@@ -18,6 +18,7 @@ import Neha2 from "../assets/images/committee/members/neha.jpg";
 import Shuaib2 from "../assets/images/committee/members/shuaib.jpg";
 import Sheikh2 from "../assets/images/committee/members/sheikh1.jpg";
 import Saneef2 from "../assets/images/committee/members/saneef1.jpg";
+import Aashik2 from "../assets/images/committee/members/ashik1.jpg";
 
 const members = [
   {
@@ -57,7 +58,7 @@ const members = [
     picture: {
       original: Aashik,
       cartoon: Aashik,
-      white: Aashik,
+      white: Aashik2,
     },
   },
   {
@@ -149,7 +150,7 @@ const members = [
     position: "Design & Media",
     group: "Dendrites",
     email: "ttsaneef99@gmail.com",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/saneef-tt-008915151/",
     description:
       "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
     picture: {
