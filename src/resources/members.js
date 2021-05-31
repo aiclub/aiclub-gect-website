@@ -217,7 +217,7 @@ const members = [
     group: "Axon",
     email: "nakshathra.nazer@gmail.com",
     linkedIn: "https://www.linkedin.com/in/nakshathra-nazer-3b95ba1a4",
-    description: "",
+    description: "Our intelligence is what makes us human, and AI is an extension of that quality.",
     picture: {
       original: Nakshathra,
       cartoon: Nakshathra,
