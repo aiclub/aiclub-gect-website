@@ -9,12 +9,6 @@ import Abhay from "../assets/images/committee/members/abhay.jpg";
 import Ajay from "../assets/images/committee/members/ajay.jpg";
 import Sheikh from "../assets/images/committee/members/sheikh.jpg";
 import Adhil from "../assets/images/committee/members/adil.jpg";
-import Calvin from "../assets/images/committee/members/Calvin_1.jpg";
-import Favaz from "../assets/images/committee/members/favaz1.jpg";
-import Anagha from "../assets/images/committee/members/anag.jpg";
-import Niranjan from "../assets/images/committee/members/Niranjan_1.jpg";
-import AdhilKP from "../assets/images/committee/members/adhil-kp.jpg";
-
 import Adhil2 from "../assets/images/committee/members/adil1.jpg";
 import Abhay2 from "../assets/images/committee/members/abhay1.jpg";
 import Ajay2 from "../assets/images/committee/members/ajay1.jpg";
@@ -24,12 +18,6 @@ import Neha2 from "../assets/images/committee/members/neha.jpg";
 import Shuaib2 from "../assets/images/committee/members/shuaib.jpg";
 import Sheikh2 from "../assets/images/committee/members/sheikh1.jpg";
 import Saneef2 from "../assets/images/committee/members/saneef1.jpg";
-import Calvin2 from "../assets/images/committee/members/Calvin.jpg";
-import Favaz2 from "../assets/images/committee/members/favaz.jpg";
-import Anagha2 from "../assets/images/committee/members/anagha.jpg";
-import Niranjan2 from "../assets/images/committee/members/Niranjan.jpg";
-import AdhilKP1 from "../assets/images/committee/members/adhil-kp1.jpg";
-
 
 const members = [
   {
@@ -67,9 +55,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
     description: "",
     picture: {
-      original: AdhilKP,
-      cartoon: AdhilKP,
-      white: AdhilKP1,
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
     },
   },
   {
@@ -80,9 +68,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/anagha-suresh-913416171",
     description: "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
     picture: {
-      original: Anagha,
-      cartoon: Anagha,
-      white: Anagha2,
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
     },
   },
   {
@@ -107,9 +95,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/muhammed-favaz-t-p-48849a164",
     description: "",
     picture: {
-      original: Favaz,
-      cartoon: Favaz,
-      white: Favaz2,
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
     },
   },
   {
@@ -134,9 +122,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/calvin-wilson-254002186/",
     description: "",
     picture: {
-      original: Calvin,
-      cartoon: Calvin,
-      white: Calvin2,
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
     },
   },
   {
@@ -254,9 +242,9 @@ const members = [
     description:
       "We're making this analogy that AI is the new electricity. Electricity transformed industries: agriculture, transportation, communication, manufacturing",
     picture: {
-      original: Niranjan,
-      cartoon: Niranjan,
-      white: Niranjan2,
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
     },
   },
 ];
