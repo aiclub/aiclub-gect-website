@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme)=>({
 
         fontFamily: "Lato",
         fontStyle: 'normal',
-        fontWeight: '800',
+        fontWeight: '700',
         fontSize: '23px',
         lineHeight: '30px',
         textAlign: 'left',
@@ -185,7 +185,6 @@ const useStyles = makeStyles((theme)=>({
 
   const Profile = ({ memberIndex }) => {
       const classes = useStyles();
-      console.log(memberIndex)
 
       return (
         <div className={classes.cardContainer}  >

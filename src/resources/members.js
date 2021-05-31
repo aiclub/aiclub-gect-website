@@ -18,6 +18,7 @@ import Neha2 from "../assets/images/committee/members/neha.jpg";
 import Shuaib2 from "../assets/images/committee/members/shuaib.jpg";
 import Sheikh2 from "../assets/images/committee/members/sheikh1.jpg";
 import Saneef2 from "../assets/images/committee/members/saneef1.jpg";
+import Aashik2 from "../assets/images/committee/members/ashik1.jpg";
 
 const members = [
   {
@@ -26,6 +27,19 @@ const members = [
     group: "Nucleus",
     email: "",
     linkedIn: "https://www.linkedin.com/in/anwar-sadique-4287203b/",
+    description: "",
+    picture: {
+      original: TempImage,
+      cartoon: TempImage,
+      white: TempImage,
+    },
+  },
+  {
+    name: "Aadil K P",
+    position: "Secretary",
+    group: "Nucleus",
+    email: "abduladhilpk@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
     description: "",
     picture: {
       original: TempImage,
@@ -44,29 +58,17 @@ const members = [
     picture: {
       original: Aashik,
       cartoon: Aashik,
-      white: Aashik,
+      white: Aashik2,
     },
   },
   {
-    name: "Aadil K P",
-    position: "Secretary",
-    group: "Nucleus",
-    email: "",
-    linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
-    description: "",
-    picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
-    },
-  },
-  {
-    name: "Anagha",
+    name: "Anagha Suresh",
     position: "Joint Convenor",
     group: "Nucleus",
     email: "anaghasureshbabu24@gmail.com",
     linkedIn: "https://www.linkedin.com/in/anagha-suresh-913416171",
-    description: "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
+    description:
+      "Artificial intelligence will play a pivotal role in the coming future. AI gradually changes society and improve the convenience and comfort of human.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -93,7 +95,8 @@ const members = [
     group: "Nucleus",
     email: "favaztp696@gmail.com",
     linkedIn: "https://www.linkedin.com/in/muhammed-favaz-t-p-48849a164",
-    description: "",
+    description:
+      "Democratize AI. Create an AI ecosystem which is acessible for all.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -120,7 +123,8 @@ const members = [
     group: "Node",
     email: "calvinwilson2017@gmail.com",
     linkedIn: "https://www.linkedin.com/in/calvin-wilson-254002186/",
-    description: "",
+    description:
+      "AI is likely to be either the best or worst thing to happen to humanity.",
     picture: {
       original: TempImage,
       cartoon: TempImage,
@@ -145,9 +149,10 @@ const members = [
     name: "Saneef",
     position: "Design & Media",
     group: "Dendrites",
-    email: "",
-    linkedIn: "",
-    description: "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
+    email: "ttsaneef99@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/saneef-tt-008915151/",
+    description:
+      "The era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
     picture: {
       original: Saneef,
       cartoon: Saneef,
@@ -160,7 +165,7 @@ const members = [
     group: "Axon",
     email: "abduladhilpk@gmail.com",
     linkedIn: "https://www.linkedin.com/in/abduladhilpk",
-    description: "",
+    description: "AI and its offshoot will be a foundational tool for creating social good.",
     picture: {
       original: Adhil,
       cartoon: Adhil,
@@ -212,7 +217,7 @@ const members = [
     group: "Axon",
     email: "nakshathra.nazer@gmail.com",
     linkedIn: "https://www.linkedin.com/in/nakshathra-nazer-3b95ba1a4",
-    description: "",
+    description: "Our intelligence is what makes us human, and AI is an extension of that quality.",
     picture: {
       original: Nakshathra,
       cartoon: Nakshathra,
@@ -234,7 +239,7 @@ const members = [
     },
   },
   {
-    name: "Niranjan Neelakantan",
+    name: "Niranjan",
     position: "Execom",
     group: "Axon",
     email: "niranjan2neelakantan@gmail.com",
