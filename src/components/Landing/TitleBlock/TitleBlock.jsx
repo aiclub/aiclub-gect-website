@@ -103,6 +103,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "translateX(-50%)",
   },
   arch: {
+    objectFit: "contain",
     height: 60,
     width: 130,
   },

@@ -30,7 +30,7 @@ import Favaz2 from "../assets/images/committee/members/favaz.jpg";
 import Anagha2 from "../assets/images/committee/members/anagha.jpg";
 import Niranjan2 from "../assets/images/committee/members/Niranjan.jpg";
 import AdhilKP1 from "../assets/images/committee/members/adhil-kp1.jpg";
-import Allwyn1 from "../assets/images/committee/members/Allwyn.jpg";
+import Allwyn1 from "../assets/images/committee/members/allwyn1.jpg";
 import Aashik1 from "../assets/images/committee/members/ashik1.jpg";
 
 
