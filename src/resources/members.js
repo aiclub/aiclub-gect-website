@@ -15,6 +15,7 @@ import Anagha from "../assets/images/committee/members/anag.jpg";
 import Niranjan from "../assets/images/committee/members/Niranjan_1.jpg";
 import AdhilKP from "../assets/images/committee/members/adhil-kp.jpg";
 import Allwyn from "../assets/images/committee/members/allwyn.jpg";
+import Anwar from "./assets/images/committee/members/anvar-sir.jpg"
 
 import Adhil2 from "../assets/images/committee/members/adil1.jpg";
 import Abhay2 from "../assets/images/committee/members/abhay1.jpg";
@@ -32,6 +33,7 @@ import Niranjan2 from "../assets/images/committee/members/Niranjan.jpg";
 import AdhilKP1 from "../assets/images/committee/members/adhil-kp1.jpg";
 import Allwyn1 from "../assets/images/committee/members/allwyn1.jpg";
 import Aashik1 from "../assets/images/committee/members/ashik1.jpg";
+import Anwar2 from "./assets/images/committee/members/anvar-sir-blk.jpg"
 
 
 
@@ -44,9 +46,9 @@ const members = [
     linkedIn: "https://www.linkedin.com/in/anwar-sadique-4287203b/",
     description: "",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Anwar,
+      cartoon: Anwar2,
+      white: Anwar2,
     },
   },
   {
