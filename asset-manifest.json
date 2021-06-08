@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/aiclub-gect-website/static/css/main.bbbd76b9.chunk.css",
-    "main.js": "/aiclub-gect-website/static/js/main.a84bb3c0.chunk.js",
-    "main.js.map": "/aiclub-gect-website/static/js/main.a84bb3c0.chunk.js.map",
-    "runtime-main.js": "/aiclub-gect-website/static/js/runtime-main.e505ad98.js",
-    "runtime-main.js.map": "/aiclub-gect-website/static/js/runtime-main.e505ad98.js.map",
-    "static/js/2.40149987.chunk.js": "/aiclub-gect-website/static/js/2.40149987.chunk.js",
-    "static/js/2.40149987.chunk.js.map": "/aiclub-gect-website/static/js/2.40149987.chunk.js.map",
-    "static/js/3.a426ab86.chunk.js": "/aiclub-gect-website/static/js/3.a426ab86.chunk.js",
-    "static/js/3.a426ab86.chunk.js.map": "/aiclub-gect-website/static/js/3.a426ab86.chunk.js.map",
+    "main.css": "/aiclub-gect-website/static/css/main.862467e8.chunk.css",
+    "main.js": "/aiclub-gect-website/static/js/main.d36805f2.chunk.js",
+    "main.js.map": "/aiclub-gect-website/static/js/main.d36805f2.chunk.js.map",
+    "runtime-main.js": "/aiclub-gect-website/static/js/runtime-main.c441b5b8.js",
+    "runtime-main.js.map": "/aiclub-gect-website/static/js/runtime-main.c441b5b8.js.map",
+    "static/js/2.85346099.chunk.js": "/aiclub-gect-website/static/js/2.85346099.chunk.js",
+    "static/js/2.85346099.chunk.js.map": "/aiclub-gect-website/static/js/2.85346099.chunk.js.map",
+    "static/js/3.987aaa0d.chunk.js": "/aiclub-gect-website/static/js/3.987aaa0d.chunk.js",
+    "static/js/3.987aaa0d.chunk.js.map": "/aiclub-gect-website/static/js/3.987aaa0d.chunk.js.map",
     "index.html": "/aiclub-gect-website/index.html",
-    "static/css/main.bbbd76b9.chunk.css.map": "/aiclub-gect-website/static/css/main.bbbd76b9.chunk.css.map",
-    "static/js/2.40149987.chunk.js.LICENSE.txt": "/aiclub-gect-website/static/js/2.40149987.chunk.js.LICENSE.txt",
+    "static/css/main.862467e8.chunk.css.map": "/aiclub-gect-website/static/css/main.862467e8.chunk.css.map",
+    "static/js/2.85346099.chunk.js.LICENSE.txt": "/aiclub-gect-website/static/js/2.85346099.chunk.js.LICENSE.txt",
     "static/media/index.css": "/aiclub-gect-website/static/media/Poppins-ExtraBold.4ed78cd5.ttf",
     "static/media/Background.7e9f0330.png": "/aiclub-gect-website/static/media/Background.7e9f0330.png",
     "static/media/Calvin.0ccaae7d.jpg": "/aiclub-gect-website/static/media/Calvin.0ccaae7d.jpg",
@@ -36,6 +36,8 @@
     "static/media/allwyn1.9d73e6c9.jpg": "/aiclub-gect-website/static/media/allwyn1.9d73e6c9.jpg",
     "static/media/anag.8149ac54.jpg": "/aiclub-gect-website/static/media/anag.8149ac54.jpg",
     "static/media/anagha.d1d5fff3.jpg": "/aiclub-gect-website/static/media/anagha.d1d5fff3.jpg",
+    "static/media/anvar-sir-blk.9cbb215b.jpg": "/aiclub-gect-website/static/media/anvar-sir-blk.9cbb215b.jpg",
+    "static/media/anvar-sir.0c6b27c7.jpg": "/aiclub-gect-website/static/media/anvar-sir.0c6b27c7.jpg",
     "static/media/arch.49df44d8.png": "/aiclub-gect-website/static/media/arch.49df44d8.png",
     "static/media/ashik.31e458be.jpg": "/aiclub-gect-website/static/media/ashik.31e458be.jpg",
     "static/media/ashik1.f0ced431.jpg": "/aiclub-gect-website/static/media/ashik1.f0ced431.jpg",
@@ -52,9 +54,9 @@
     "static/media/shuaib.dd7b30a4.jpg": "/aiclub-gect-website/static/media/shuaib.dd7b30a4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e505ad98.js",
-    "static/js/2.40149987.chunk.js",
-    "static/css/main.bbbd76b9.chunk.css",
-    "static/js/main.a84bb3c0.chunk.js"
+    "static/js/runtime-main.c441b5b8.js",
+    "static/js/2.85346099.chunk.js",
+    "static/css/main.862467e8.chunk.css",
+    "static/js/main.d36805f2.chunk.js"
   ]
 }
