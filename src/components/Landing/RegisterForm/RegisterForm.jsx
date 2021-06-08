@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 import FilledInput from "@material-ui/core/FilledInput";
 import Button from "@material-ui/core/Button";
@@ -16,7 +17,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import "../../../assets/fonts/Lato/Lato-Regular.ttf";
 import "../../../assets/fonts/Poppins/Poppins-ExtraBold.ttf";
 
-const axios = require("axios");
+import { API_URL } from "../../../resources/keys";
 
 const useStyles = makeStyles((theme) => ({
   formdiv: {
@@ -200,7 +201,7 @@ const RegisterForm = () => {
         isLoading: true
       })
       axios
-        .post("https://ai-club.herokuapp.com/api/user/register", {
+        .post(`${API_URL}user/register`, {
           firstName: data.first,
           lastName: data.last,
           email: data.email,

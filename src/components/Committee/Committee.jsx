@@ -9,6 +9,8 @@ import MemberBackground from "./MemberBackground/MemberBackground";
 // import Background from "../../assets/images/committee/background.png";
 import Background2 from "../../assets/images/committee/Background.png";
 
+import { API_URL } from "../../resources/keys";
+
 // Overriding @material ui themes.
 const useStyles = makeStyles((theme) => ({
   committeeContainer: {
@@ -60,7 +62,7 @@ const Committee = ({ small }) => {
   // Lifted state from `MemberCount` component to prevent API calls on every render.
   useEffect(() => {
     axios
-      .get("https://ai-club.herokuapp.com/api/user/count")
+      .get(`${API_URL}user/count`)
       .then((res) => {
         setCount(res.data.count);
       })
