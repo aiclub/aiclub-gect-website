@@ -1,4 +1,4 @@
-import TempImage from "../assets/images/committee/members/temp.png";
+// import TempImage from "../assets/images/committee/members/temp.png";
 import Nakshathra from "../assets/images/committee/members/Nakshathra.jpeg";
 import Neha from "../assets/images/committee/members/Neha.jpeg";
 import Shuaib from "../assets/images/committee/members/Shuaib.jpeg";
@@ -15,6 +15,7 @@ import Anagha from "../assets/images/committee/members/anag.jpg";
 import Niranjan from "../assets/images/committee/members/Niranjan_1.jpg";
 import AdhilKP from "../assets/images/committee/members/adhil-kp.jpg";
 import Allwyn from "../assets/images/committee/members/allwyn.jpg";
+import Anwar from "../assets/images/committee/members/anvar-sir.jpg"
 
 import Adhil2 from "../assets/images/committee/members/adil1.jpg";
 import Abhay2 from "../assets/images/committee/members/abhay1.jpg";
@@ -32,6 +33,7 @@ import Niranjan2 from "../assets/images/committee/members/Niranjan.jpg";
 import AdhilKP1 from "../assets/images/committee/members/adhil-kp1.jpg";
 import Allwyn1 from "../assets/images/committee/members/allwyn1.jpg";
 import Aashik1 from "../assets/images/committee/members/ashik1.jpg";
+import Anwar2 from "../assets/images/committee/members/anvar-sir-blk.jpg"
 
 
 
@@ -42,11 +44,11 @@ const members = [
     group: "Nucleus",
     email: "",
     linkedIn: "https://www.linkedin.com/in/anwar-sadique-4287203b/",
-    description: "",
+    description: "\"arch.ai\" is all about learning, educating and collaborating under the arch.",
     picture: {
-      original: TempImage,
-      cartoon: TempImage,
-      white: TempImage,
+      original: Anwar,
+      cartoon: Anwar,
+      white: Anwar2,
     },
   },
   {
@@ -216,7 +218,7 @@ const members = [
     group: "Axon",
     email: "shuaibabh@gmail.com",
     linkedIn: "https://www.linkedin.com/in/shuaib-abubakker-bapputty-haji",
-    description: "the question whether a machine can think is forbidden !",
+    description: "The question whether a machine can think is forbidden !",
     picture: {
       original: Shuaib,
       cartoon: Shuaib,
