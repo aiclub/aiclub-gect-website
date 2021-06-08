@@ -57,7 +57,7 @@ const members = [
     group: "Nucleus",
     email: "abduladhilpk@gmail.com",
     linkedIn: "https://www.linkedin.com/in/aadil-kp-6a17351a2/",
-    description: "",
+    description: "The coming era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
     picture: {
       original: AdhilKP,
       cartoon: AdhilKP,
